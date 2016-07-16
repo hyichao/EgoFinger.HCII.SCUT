@@ -26,7 +26,8 @@ The dataset is availble in the following link (which is the data page of our lab
 
 By using the dataset, we establish a demo application named Ego-Air-Writing, and the video has been uploaded to Youtube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PeSrRxKghv8" frameborder="0" allowfullscreen></iframe>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/PeSrRxKghv8" frameborder="0" allowfullscreen></iframe>-->
+<https://www.youtube.com/embed/PeSrRxKghv8>
 
 If you are one of the researchers interested in hand or egocentric vision, please read our paper, which will provide a straight-forward illustration of dataset, approach, and application. Or, if you need further information, please feel free to contact 
 
