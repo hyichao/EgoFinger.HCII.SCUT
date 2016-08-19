@@ -178,7 +178,7 @@ void Processor::splitVideo(QString videoPath, QString dir, QString baseName)
 	for (int i = 0; i < totalFrameNumber; i++)
 	{
 		Mat frame;
-		cap >> frame;
+		cap.read(frame);
 		cv::resize(frame, frame, cv::Size(640, 480));
 
 		QString writeImgPath = dir + "/" + baseName + "_color_" + QString::number(i) + ".png";

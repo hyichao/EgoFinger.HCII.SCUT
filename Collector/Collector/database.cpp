@@ -82,7 +82,7 @@ void Database::prepareDB(QString targetDir)
 		QMessageBox::information(NULL, "database", "database fail to create at: "+ dbpath);
 		return;
 	}
-		
+	
 
 	QSqlQuery query(db);
 	query.exec("drop table files");

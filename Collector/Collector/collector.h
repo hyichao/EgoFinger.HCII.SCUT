@@ -65,7 +65,7 @@ private slots:
 
 protected:
 	void mousePressEvent(QMouseEvent *e);
-
+	
 public:
 	//auxilary function
 	void updateWithIndex(int index);
