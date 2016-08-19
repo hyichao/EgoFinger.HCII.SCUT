@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>900</width>
+    <width>1394</width>
     <height>600</height>
    </rect>
   </property>
@@ -284,13 +284,351 @@
      <string>&lt;拇指尖坐标&gt;</string>
     </property>
    </widget>
+   <widget class="QLabel" name="rLabel">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>20</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>右手：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rfjLabel">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>260</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;无名指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mftLabel">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>170</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;中指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rftLabel">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>230</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;无名指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tftLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>290</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;尾指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mftLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>170</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;中指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iftLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>110</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;食指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tfjLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>320</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;尾指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mfjLabel">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>200</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;中指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bjLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>380</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;拇指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tftLabel">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>290</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;尾指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rftLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>230</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;无名指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tlLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>50</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;左上角坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bjLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>380</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;拇指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tlLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>50</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;左上角坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ifjLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>140</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;食指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tfjLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>320</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;尾指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rfjLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>260</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;无名指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lLabel">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>20</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>左手：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="btLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>350</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;拇指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iftLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>110</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;食指指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>80</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;右下角坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="btLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>350</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;拇指尖坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>80</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;右下角坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mfjLabel_l">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>200</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;中指关节坐标&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ifjLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>140</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;食指关节坐标&gt;</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>900</width>
+     <width>1394</width>
      <height>23</height>
     </rect>
    </property>

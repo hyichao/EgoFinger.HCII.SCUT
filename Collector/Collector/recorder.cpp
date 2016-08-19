@@ -15,7 +15,7 @@ Recorder::~Recorder()
 //*****************
 void Recorder::initFileStream(QString currentDir)
 {
-    outFilePath = currentDir+"//label.txt";
+	outFilePath = currentDir + "//label.txt";
 }
 
 //*****************
@@ -48,7 +48,7 @@ void Recorder::writeDataFile()
 
 	for (int i = 0; i < strList.count(); i++)
 	{
-		txt << strList.at(i) <<endl;
+		txt << strList.at(i) << endl;
 	}
 
 	f.close();

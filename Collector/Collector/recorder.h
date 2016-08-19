@@ -9,19 +9,19 @@
 class Recorder
 {
 public:
-    Recorder();
-    ~Recorder();
+	Recorder();
+	~Recorder();
 
 public:
 
-    QString outFilePath;
-    QFile outFile;
+	QString outFilePath;
+	QFile outFile;
 
-    QStringList strList;
+	QStringList strList;
 
 public:
 
-    void initFileStream(QString currentDir);
+	void initFileStream(QString currentDir);
 	void appendStringList(QString fileName, vector<float> params);
 	void writeDataFile();
 

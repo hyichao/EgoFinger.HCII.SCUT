@@ -43,13 +43,15 @@ private:
 
 	QString currentImageName;
 
+	QString videoType;	//###just like "SingleOne" "PairSix" etc.
+
 	//mat processor
 	Processor proc;
 	//sqlite db
 	Database db;
 
 
-private slots:
+	private slots:
 	void on_videoButt_clicked();
 
 	void on_selectButt_clicked();
@@ -62,20 +64,23 @@ private slots:
 
 	void on_nextButt_clicked();
 
+	void on_passButt_clicked();
+
 
 protected:
 	void mousePressEvent(QMouseEvent *e);
-	
+
 public:
 	//auxilary function
 	void updateWithIndex(int index);
-	void recordDataIntoDb();
+	void recordDataIntoDb(QString videoType);
+	void recordPassDataIntoDb();	//###图片被定义为劣质图片时使用
 
 	//display funcion of ui
 	void displayMat(Mat img);
 	void displayData();
 
-	
+
 };
 
 #endif // COLLECTOR_H
