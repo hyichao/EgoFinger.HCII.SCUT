@@ -1,0 +1,1168 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+Blob	caffe/blob.hpp	/^  Blob()$/;"	f	class:caffe::Blob
+Blob	caffe/blob.hpp	/^class Blob {$/;"	c	namespace:caffe
+CAFFE_BLOB_HPP_	caffe/blob.hpp	2;"	d
+CanonicalAxisIndex	caffe/blob.hpp	/^  inline int CanonicalAxisIndex(int axis_index) const {$/;"	f	class:caffe::Blob
+LegacyShape	caffe/blob.hpp	/^  inline int LegacyShape(int index) const {$/;"	f	class:caffe::Blob
+caffe	caffe/blob.hpp	/^namespace caffe {$/;"	n
+capacity_	caffe/blob.hpp	/^  int capacity_;$/;"	m	class:caffe::Blob
+channels	caffe/blob.hpp	/^  inline int channels() const { return LegacyShape(1); }$/;"	f	class:caffe::Blob
+count	caffe/blob.hpp	/^  inline int count() const { return count_; }$/;"	f	class:caffe::Blob
+count	caffe/blob.hpp	/^  inline int count(int start_axis) const {$/;"	f	class:caffe::Blob
+count	caffe/blob.hpp	/^  inline int count(int start_axis, int end_axis) const {$/;"	f	class:caffe::Blob
+count_	caffe/blob.hpp	/^  int count_;$/;"	m	class:caffe::Blob
+data	caffe/blob.hpp	/^  inline const shared_ptr<SyncedMemory>& data() const {$/;"	f	class:caffe::Blob
+data_	caffe/blob.hpp	/^  shared_ptr<SyncedMemory> data_;$/;"	m	class:caffe::Blob
+data_at	caffe/blob.hpp	/^  inline Dtype data_at(const int n, const int c, const int h,$/;"	f	class:caffe::Blob
+data_at	caffe/blob.hpp	/^  inline Dtype data_at(const vector<int>& index) const {$/;"	f	class:caffe::Blob
+diff	caffe/blob.hpp	/^  inline const shared_ptr<SyncedMemory>& diff() const {$/;"	f	class:caffe::Blob
+diff_	caffe/blob.hpp	/^  shared_ptr<SyncedMemory> diff_;$/;"	m	class:caffe::Blob
+diff_at	caffe/blob.hpp	/^  inline Dtype diff_at(const int n, const int c, const int h,$/;"	f	class:caffe::Blob
+diff_at	caffe/blob.hpp	/^  inline Dtype diff_at(const vector<int>& index) const {$/;"	f	class:caffe::Blob
+height	caffe/blob.hpp	/^  inline int height() const { return LegacyShape(2); }$/;"	f	class:caffe::Blob
+kMaxBlobAxes	caffe/blob.hpp	/^const int kMaxBlobAxes = 32;$/;"	v
+num	caffe/blob.hpp	/^  inline int num() const { return LegacyShape(0); }$/;"	f	class:caffe::Blob
+num_axes	caffe/blob.hpp	/^  inline int num_axes() const { return shape_.size(); }$/;"	f	class:caffe::Blob
+offset	caffe/blob.hpp	/^  inline int offset(const int n, const int c = 0, const int h = 0,$/;"	f	class:caffe::Blob
+offset	caffe/blob.hpp	/^  inline int offset(const vector<int>& indices) const {$/;"	f	class:caffe::Blob
+shape	caffe/blob.hpp	/^  inline const vector<int>& shape() const { return shape_; }$/;"	f	class:caffe::Blob
+shape	caffe/blob.hpp	/^  inline int shape(int index) const {$/;"	f	class:caffe::Blob
+shape_	caffe/blob.hpp	/^  vector<int> shape_;$/;"	m	class:caffe::Blob
+shape_string	caffe/blob.hpp	/^  inline string shape_string() const {$/;"	f	class:caffe::Blob
+width	caffe/blob.hpp	/^  inline int width() const { return LegacyShape(3); }$/;"	f	class:caffe::Blob
+CAFFE_CAFFE_HPP_	caffe/caffe.hpp	5;"	d
+Brew	caffe/common.hpp	/^  enum Brew { CPU, GPU };$/;"	g	class:caffe::Caffe
+CAFFE_COMMON_HPP_	caffe/common.hpp	2;"	d
+CPU	caffe/common.hpp	/^  enum Brew { CPU, GPU };$/;"	e	enum:caffe::Caffe::Brew
+Caffe	caffe/common.hpp	/^class Caffe {$/;"	c	namespace:caffe
+DISABLE_COPY_AND_ASSIGN	caffe/common.hpp	31;"	d
+GPU	caffe/common.hpp	/^  enum Brew { CPU, GPU };$/;"	e	enum:caffe::Caffe::Brew
+INSTANTIATE_CLASS	caffe/common.hpp	37;"	d
+INSTANTIATE_LAYER_GPU_BACKWARD	caffe/common.hpp	50;"	d
+INSTANTIATE_LAYER_GPU_FORWARD	caffe/common.hpp	42;"	d
+INSTANTIATE_LAYER_GPU_FUNCS	caffe/common.hpp	60;"	d
+NOT_IMPLEMENTED	caffe/common.hpp	66;"	d
+RNG	caffe/common.hpp	/^  class RNG {$/;"	c	class:caffe::Caffe
+caffe	caffe/common.hpp	/^namespace caffe {$/;"	n
+cublas_handle	caffe/common.hpp	/^  inline static cublasHandle_t cublas_handle() { return Get().cublas_handle_; }$/;"	f	class:caffe::Caffe
+cublas_handle_	caffe/common.hpp	/^  cublasHandle_t cublas_handle_;$/;"	m	class:caffe::Caffe
+curand_generator	caffe/common.hpp	/^  inline static curandGenerator_t curand_generator() {$/;"	f	class:caffe::Caffe
+curand_generator_	caffe/common.hpp	/^  curandGenerator_t curand_generator_;$/;"	m	class:caffe::Caffe
+cv	caffe/common.hpp	/^namespace cv { class Mat; }$/;"	n
+generator_	caffe/common.hpp	/^    shared_ptr<Generator> generator_;$/;"	m	class:caffe::Caffe::RNG
+mode	caffe/common.hpp	/^  inline static Brew mode() { return Get().mode_; }$/;"	f	class:caffe::Caffe
+mode_	caffe/common.hpp	/^  Brew mode_;$/;"	m	class:caffe::Caffe
+random_generator_	caffe/common.hpp	/^  shared_ptr<RNG> random_generator_;$/;"	m	class:caffe::Caffe
+rng_stream	caffe/common.hpp	/^  inline static RNG& rng_stream() {$/;"	f	class:caffe::Caffe
+root_solver	caffe/common.hpp	/^  inline static bool root_solver() { return Get().root_solver_; }$/;"	f	class:caffe::Caffe
+root_solver_	caffe/common.hpp	/^  bool root_solver_;$/;"	m	class:caffe::Caffe
+set_mode	caffe/common.hpp	/^  inline static void set_mode(Brew mode) { Get().mode_ = mode; }$/;"	f	class:caffe::Caffe
+set_root_solver	caffe/common.hpp	/^  inline static void set_root_solver(bool val) { Get().root_solver_ = val; }$/;"	f	class:caffe::Caffe
+set_solver_count	caffe/common.hpp	/^  inline static void set_solver_count(int val) { Get().solver_count_ = val; }$/;"	f	class:caffe::Caffe
+solver_count	caffe/common.hpp	/^  inline static int solver_count() { return Get().solver_count_; }$/;"	f	class:caffe::Caffe
+solver_count_	caffe/common.hpp	/^  int solver_count_;$/;"	m	class:caffe::Caffe
+ArgMaxLayer	caffe/common_layers.hpp	/^  explicit ArgMaxLayer(const LayerParameter& param)$/;"	f	class:caffe::ArgMaxLayer
+ArgMaxLayer	caffe/common_layers.hpp	/^class ArgMaxLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+Backward_cpu	caffe/common_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::ArgMaxLayer
+Backward_cpu	caffe/common_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::ReshapeLayer
+Backward_gpu	caffe/common_layers.hpp	/^  virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::ReshapeLayer
+CAFFE_COMMON_LAYERS_HPP_	caffe/common_layers.hpp	2;"	d
+ConcatLayer	caffe/common_layers.hpp	/^  explicit ConcatLayer(const LayerParameter& param)$/;"	f	class:caffe::ConcatLayer
+ConcatLayer	caffe/common_layers.hpp	/^class ConcatLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+CuDNNSoftmaxLayer	caffe/common_layers.hpp	/^  explicit CuDNNSoftmaxLayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNSoftmaxLayer
+CuDNNSoftmaxLayer	caffe/common_layers.hpp	/^class CuDNNSoftmaxLayer : public SoftmaxLayer<Dtype> {$/;"	c	namespace:caffe
+EltwiseLayer	caffe/common_layers.hpp	/^  explicit EltwiseLayer(const LayerParameter& param)$/;"	f	class:caffe::EltwiseLayer
+EltwiseLayer	caffe/common_layers.hpp	/^class EltwiseLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+EmbedLayer	caffe/common_layers.hpp	/^  explicit EmbedLayer(const LayerParameter& param)$/;"	f	class:caffe::EmbedLayer
+EmbedLayer	caffe/common_layers.hpp	/^class EmbedLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::ArgMaxLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::EmbedLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::FlattenLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::InnerProductLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::MVNLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::ReductionLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::ReshapeLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::SliceLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::SoftmaxLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::SplitLayer
+ExactNumBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::TileLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 0; }$/;"	f	class:caffe::SilenceLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::ArgMaxLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::ConcatLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::EltwiseLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::EmbedLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::FlattenLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::InnerProductLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::MVNLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::ReductionLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::ReshapeLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::SoftmaxLayer
+ExactNumTopBlobs	caffe/common_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::TileLayer
+FilterLayer	caffe/common_layers.hpp	/^  explicit FilterLayer(const LayerParameter& param)$/;"	f	class:caffe::FilterLayer
+FilterLayer	caffe/common_layers.hpp	/^class FilterLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+FlattenLayer	caffe/common_layers.hpp	/^  explicit FlattenLayer(const LayerParameter& param)$/;"	f	class:caffe::FlattenLayer
+FlattenLayer	caffe/common_layers.hpp	/^class FlattenLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+Forward_cpu	caffe/common_layers.hpp	/^  virtual void Forward_cpu(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::ReshapeLayer
+Forward_cpu	caffe/common_layers.hpp	/^  virtual void Forward_cpu(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::SilenceLayer
+Forward_gpu	caffe/common_layers.hpp	/^  virtual void Forward_gpu(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::ReshapeLayer
+InnerProductLayer	caffe/common_layers.hpp	/^  explicit InnerProductLayer(const LayerParameter& param)$/;"	f	class:caffe::InnerProductLayer
+InnerProductLayer	caffe/common_layers.hpp	/^class InnerProductLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+K_	caffe/common_layers.hpp	/^  int K_;$/;"	m	class:caffe::EmbedLayer
+K_	caffe/common_layers.hpp	/^  int K_;$/;"	m	class:caffe::InnerProductLayer
+MVNLayer	caffe/common_layers.hpp	/^  explicit MVNLayer(const LayerParameter& param)$/;"	f	class:caffe::MVNLayer
+MVNLayer	caffe/common_layers.hpp	/^class MVNLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+M_	caffe/common_layers.hpp	/^  int M_;$/;"	m	class:caffe::EmbedLayer
+M_	caffe/common_layers.hpp	/^  int M_;$/;"	m	class:caffe::InnerProductLayer
+MinBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 1; }$/;"	f	class:caffe::ConcatLayer
+MinBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 1; }$/;"	f	class:caffe::SilenceLayer
+MinBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 2; }$/;"	f	class:caffe::EltwiseLayer
+MinBottomBlobs	caffe/common_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 2; }$/;"	f	class:caffe::FilterLayer
+MinTopBlobs	caffe/common_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::FilterLayer
+MinTopBlobs	caffe/common_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::SliceLayer
+MinTopBlobs	caffe/common_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::SplitLayer
+N_	caffe/common_layers.hpp	/^  int N_;$/;"	m	class:caffe::EmbedLayer
+N_	caffe/common_layers.hpp	/^  int N_;$/;"	m	class:caffe::InnerProductLayer
+ReductionLayer	caffe/common_layers.hpp	/^  explicit ReductionLayer(const LayerParameter& param)$/;"	f	class:caffe::ReductionLayer
+ReductionLayer	caffe/common_layers.hpp	/^class ReductionLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+Reshape	caffe/common_layers.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::SilenceLayer
+ReshapeLayer	caffe/common_layers.hpp	/^  explicit ReshapeLayer(const LayerParameter& param)$/;"	f	class:caffe::ReshapeLayer
+ReshapeLayer	caffe/common_layers.hpp	/^class ReshapeLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+SilenceLayer	caffe/common_layers.hpp	/^  explicit SilenceLayer(const LayerParameter& param)$/;"	f	class:caffe::SilenceLayer
+SilenceLayer	caffe/common_layers.hpp	/^class SilenceLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+SliceLayer	caffe/common_layers.hpp	/^  explicit SliceLayer(const LayerParameter& param)$/;"	f	class:caffe::SliceLayer
+SliceLayer	caffe/common_layers.hpp	/^class SliceLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+SoftmaxLayer	caffe/common_layers.hpp	/^  explicit SoftmaxLayer(const LayerParameter& param)$/;"	f	class:caffe::SoftmaxLayer
+SoftmaxLayer	caffe/common_layers.hpp	/^class SoftmaxLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+SplitLayer	caffe/common_layers.hpp	/^  explicit SplitLayer(const LayerParameter& param)$/;"	f	class:caffe::SplitLayer
+SplitLayer	caffe/common_layers.hpp	/^class SplitLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+TileLayer	caffe/common_layers.hpp	/^  explicit TileLayer(const LayerParameter& param)$/;"	f	class:caffe::TileLayer
+TileLayer	caffe/common_layers.hpp	/^class TileLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+axis_	caffe/common_layers.hpp	/^  int axis_;$/;"	m	class:caffe::ReductionLayer
+axis_	caffe/common_layers.hpp	/^  unsigned int axis_, tiles_, outer_dim_, inner_dim_;$/;"	m	class:caffe::TileLayer
+bias_multiplier_	caffe/common_layers.hpp	/^  Blob<Dtype> bias_multiplier_;$/;"	m	class:caffe::EmbedLayer
+bias_multiplier_	caffe/common_layers.hpp	/^  Blob<Dtype> bias_multiplier_;$/;"	m	class:caffe::InnerProductLayer
+bias_term_	caffe/common_layers.hpp	/^  bool bias_term_;$/;"	m	class:caffe::EmbedLayer
+bias_term_	caffe/common_layers.hpp	/^  bool bias_term_;$/;"	m	class:caffe::InnerProductLayer
+bottom_desc_	caffe/common_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_;$/;"	m	class:caffe::CuDNNSoftmaxLayer
+caffe	caffe/common_layers.hpp	/^namespace caffe {$/;"	n
+coeff_	caffe/common_layers.hpp	/^  Dtype coeff_;$/;"	m	class:caffe::ReductionLayer
+coeffs_	caffe/common_layers.hpp	/^  vector<Dtype> coeffs_;$/;"	m	class:caffe::EltwiseLayer
+concat_axis_	caffe/common_layers.hpp	/^  int concat_axis_;$/;"	m	class:caffe::ConcatLayer
+concat_input_size_	caffe/common_layers.hpp	/^  int concat_input_size_;$/;"	m	class:caffe::ConcatLayer
+constant_count_	caffe/common_layers.hpp	/^  int constant_count_;$/;"	m	class:caffe::ReshapeLayer
+copy_axes_	caffe/common_layers.hpp	/^  vector<int> copy_axes_;$/;"	m	class:caffe::ReshapeLayer
+count_	caffe/common_layers.hpp	/^  int count_;$/;"	m	class:caffe::ConcatLayer
+count_	caffe/common_layers.hpp	/^  int count_;$/;"	m	class:caffe::SliceLayer
+count_	caffe/common_layers.hpp	/^  int count_;$/;"	m	class:caffe::SplitLayer
+dim_	caffe/common_layers.hpp	/^  int dim_;$/;"	m	class:caffe::ReductionLayer
+eps_	caffe/common_layers.hpp	/^  Dtype eps_;$/;"	m	class:caffe::MVNLayer
+first_reshape_	caffe/common_layers.hpp	/^  bool first_reshape_;$/;"	m	class:caffe::FilterLayer
+handle_	caffe/common_layers.hpp	/^  cudnnHandle_t             handle_;$/;"	m	class:caffe::CuDNNSoftmaxLayer
+handles_setup_	caffe/common_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNSoftmaxLayer
+indices_to_forward_	caffe/common_layers.hpp	/^  vector<int> indices_to_forward_;$/;"	m	class:caffe::FilterLayer
+inferred_axis_	caffe/common_layers.hpp	/^  int inferred_axis_;$/;"	m	class:caffe::ReshapeLayer
+inner_dim_	caffe/common_layers.hpp	/^  unsigned int axis_, tiles_, outer_dim_, inner_dim_;$/;"	m	class:caffe::TileLayer
+inner_num_	caffe/common_layers.hpp	/^  int inner_num_;$/;"	m	class:caffe::SoftmaxLayer
+max_idx_	caffe/common_layers.hpp	/^  Blob<int> max_idx_;$/;"	m	class:caffe::EltwiseLayer
+mean_	caffe/common_layers.hpp	/^  Blob<Dtype> mean_, variance_, temp_;$/;"	m	class:caffe::MVNLayer
+num_	caffe/common_layers.hpp	/^  int num_;$/;"	m	class:caffe::ReductionLayer
+num_concats_	caffe/common_layers.hpp	/^  int num_concats_;$/;"	m	class:caffe::ConcatLayer
+num_slices_	caffe/common_layers.hpp	/^  int num_slices_;$/;"	m	class:caffe::SliceLayer
+op_	caffe/common_layers.hpp	/^  EltwiseParameter_EltwiseOp op_;$/;"	m	class:caffe::EltwiseLayer
+op_	caffe/common_layers.hpp	/^  ReductionParameter_ReductionOp op_;$/;"	m	class:caffe::ReductionLayer
+out_max_val_	caffe/common_layers.hpp	/^  bool out_max_val_;$/;"	m	class:caffe::ArgMaxLayer
+outer_dim_	caffe/common_layers.hpp	/^  unsigned int axis_, tiles_, outer_dim_, inner_dim_;$/;"	m	class:caffe::TileLayer
+outer_num_	caffe/common_layers.hpp	/^  int outer_num_;$/;"	m	class:caffe::SoftmaxLayer
+scale_	caffe/common_layers.hpp	/^  Blob<Dtype> scale_;$/;"	m	class:caffe::SoftmaxLayer
+slice_axis_	caffe/common_layers.hpp	/^  int slice_axis_;$/;"	m	class:caffe::SliceLayer
+slice_point_	caffe/common_layers.hpp	/^  vector<int> slice_point_;$/;"	m	class:caffe::SliceLayer
+slice_size_	caffe/common_layers.hpp	/^  int slice_size_;$/;"	m	class:caffe::SliceLayer
+softmax_axis_	caffe/common_layers.hpp	/^  int softmax_axis_;$/;"	m	class:caffe::SoftmaxLayer
+stable_prod_grad_	caffe/common_layers.hpp	/^  bool stable_prod_grad_;$/;"	m	class:caffe::EltwiseLayer
+sum_multiplier_	caffe/common_layers.hpp	/^  Blob<Dtype> sum_multiplier_;$/;"	m	class:caffe::MVNLayer
+sum_multiplier_	caffe/common_layers.hpp	/^  Blob<Dtype> sum_multiplier_;$/;"	m	class:caffe::ReductionLayer
+sum_multiplier_	caffe/common_layers.hpp	/^  Blob<Dtype> sum_multiplier_;$/;"	m	class:caffe::SoftmaxLayer
+temp_	caffe/common_layers.hpp	/^  Blob<Dtype> mean_, variance_, temp_;$/;"	m	class:caffe::MVNLayer
+tiles_	caffe/common_layers.hpp	/^  unsigned int axis_, tiles_, outer_dim_, inner_dim_;$/;"	m	class:caffe::TileLayer
+top_desc_	caffe/common_layers.hpp	/^  cudnnTensorDescriptor_t top_desc_;$/;"	m	class:caffe::CuDNNSoftmaxLayer
+top_k_	caffe/common_layers.hpp	/^  size_t top_k_;$/;"	m	class:caffe::ArgMaxLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "ArgMax"; }$/;"	f	class:caffe::ArgMaxLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Concat"; }$/;"	f	class:caffe::ConcatLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Eltwise"; }$/;"	f	class:caffe::EltwiseLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Embed"; }$/;"	f	class:caffe::EmbedLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Filter"; }$/;"	f	class:caffe::FilterLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Flatten"; }$/;"	f	class:caffe::FlattenLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "InnerProduct"; }$/;"	f	class:caffe::InnerProductLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "MVN"; }$/;"	f	class:caffe::MVNLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Reduction"; }$/;"	f	class:caffe::ReductionLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Reshape"; }$/;"	f	class:caffe::ReshapeLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Silence"; }$/;"	f	class:caffe::SilenceLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Slice"; }$/;"	f	class:caffe::SliceLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Softmax"; }$/;"	f	class:caffe::SoftmaxLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Split"; }$/;"	f	class:caffe::SplitLayer
+type	caffe/common_layers.hpp	/^  virtual inline const char* type() const { return "Tile"; }$/;"	f	class:caffe::TileLayer
+variance_	caffe/common_layers.hpp	/^  Blob<Dtype> mean_, variance_, temp_;$/;"	m	class:caffe::MVNLayer
+CAFFE_CUSTOMIZED_DISPLAY_H_	caffe/customized/customized_display.hpp	2;"	d
+CTimer	caffe/customized/customized_display.hpp	/^	CTimer(){$/;"	f	class:CTimer
+CTimer	caffe/customized/customized_display.hpp	/^class CTimer{$/;"	c
+DisplayTool	caffe/customized/customized_display.hpp	/^class DisplayTool{$/;"	c
+WAITTIME	caffe/customized/customized_display.hpp	47;"	d
+calcDiff	caffe/customized/customized_display.hpp	/^	void calcDiff(){$/;"	f	class:CTimer
+diff	caffe/customized/customized_display.hpp	/^	float diff;$/;"	m	class:CTimer
+end	caffe/customized/customized_display.hpp	/^	clock_t end;$/;"	m	class:CTimer
+getDiff	caffe/customized/customized_display.hpp	/^	float getDiff(){$/;"	f	class:CTimer
+setStart	caffe/customized/customized_display.hpp	/^	void setStart(){$/;"	f	class:CTimer
+start	caffe/customized/customized_display.hpp	/^	clock_t start;$/;"	m	class:CTimer
+CAFFE_UTIL_M_IO_H_	caffe/customized/customized_io.hpp	2;"	d
+caffe	caffe/customized/customized_io.hpp	/^namespace caffe {$/;"	n
+CAFFE_UTIL_CUSTOMIZED_H_	caffe/customized/customized_util.hpp	2;"	d
+caffe	caffe/customized/customized_util.hpp	/^namespace caffe {$/;"	n
+CAFFE_CUSTOMIZED_WRITING_H_	caffe/customized/customized_writing.hpp	2;"	d
+UnicodeToUTF8	caffe/customized/customized_writing.hpp	/^	static void UnicodeToUTF8(char* pOut,char* pIn){$/;"	f	class:WritingTool
+WritingTool	caffe/customized/customized_writing.hpp	/^class WritingTool{$/;"	c
+points_	caffe/customized/customized_writing.hpp	/^	vector<cv::Point> points_;$/;"	m	class:WritingTool
+writer	caffe/customized/customized_writing.hpp	/^	cv::VideoWriter writer;$/;"	m	class:WritingTool
+Backward_cpu	caffe/data_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::BaseDataLayer
+Backward_cpu	caffe/data_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::DummyDataLayer
+Backward_cpu	caffe/data_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::HDF5DataLayer
+Backward_gpu	caffe/data_layers.hpp	/^  virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::BaseDataLayer
+Backward_gpu	caffe/data_layers.hpp	/^  virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::DummyDataLayer
+Backward_gpu	caffe/data_layers.hpp	/^  virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::HDF5DataLayer
+BaseDataLayer	caffe/data_layers.hpp	/^class BaseDataLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+BasePrefetchingDataLayer	caffe/data_layers.hpp	/^class BasePrefetchingDataLayer :$/;"	c	namespace:caffe
+Batch	caffe/data_layers.hpp	/^class Batch {$/;"	c	namespace:caffe
+CAFFE_DATA_LAYERS_HPP_	caffe/data_layers.hpp	2;"	d
+DataLayer	caffe/data_layers.hpp	/^class DataLayer : public BasePrefetchingDataLayer<Dtype> {$/;"	c	namespace:caffe
+DataLayerSetUp	caffe/data_layers.hpp	/^  virtual void DataLayerSetUp(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::BaseDataLayer
+DummyDataLayer	caffe/data_layers.hpp	/^  explicit DummyDataLayer(const LayerParameter& param)$/;"	f	class:caffe::DummyDataLayer
+DummyDataLayer	caffe/data_layers.hpp	/^class DummyDataLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::DataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::DummyDataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::HDF5DataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::ImageDataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::MemoryDataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 0; }$/;"	f	class:caffe::WindowDataLayer
+ExactNumBottomBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 2; }$/;"	f	class:caffe::HDF5OutputLayer
+ExactNumTopBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 0; }$/;"	f	class:caffe::HDF5OutputLayer
+ExactNumTopBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 2; }$/;"	f	class:caffe::ImageDataLayer
+ExactNumTopBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 2; }$/;"	f	class:caffe::MemoryDataLayer
+ExactNumTopBlobs	caffe/data_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 2; }$/;"	f	class:caffe::WindowDataLayer
+HDF5DataLayer	caffe/data_layers.hpp	/^  explicit HDF5DataLayer(const LayerParameter& param)$/;"	f	class:caffe::HDF5DataLayer
+HDF5DataLayer	caffe/data_layers.hpp	/^class HDF5DataLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+HDF5OutputLayer	caffe/data_layers.hpp	/^  explicit HDF5OutputLayer(const LayerParameter& param)$/;"	f	class:caffe::HDF5OutputLayer
+HDF5OutputLayer	caffe/data_layers.hpp	/^class HDF5OutputLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+IMAGE_INDEX	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+ImageDataLayer	caffe/data_layers.hpp	/^  explicit ImageDataLayer(const LayerParameter& param)$/;"	f	class:caffe::ImageDataLayer
+ImageDataLayer	caffe/data_layers.hpp	/^class ImageDataLayer : public BasePrefetchingDataLayer<Dtype> {$/;"	c	namespace:caffe
+LABEL	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+MaxTopBlobs	caffe/data_layers.hpp	/^  virtual inline int MaxTopBlobs() const { return 2; }$/;"	f	class:caffe::DataLayer
+MemoryDataLayer	caffe/data_layers.hpp	/^  explicit MemoryDataLayer(const LayerParameter& param)$/;"	f	class:caffe::MemoryDataLayer
+MemoryDataLayer	caffe/data_layers.hpp	/^class MemoryDataLayer : public BaseDataLayer<Dtype> {$/;"	c	namespace:caffe
+MinTopBlobs	caffe/data_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::DataLayer
+MinTopBlobs	caffe/data_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::DummyDataLayer
+MinTopBlobs	caffe/data_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::HDF5DataLayer
+NUM	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+OVERLAP	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+PREFETCH_COUNT	caffe/data_layers.hpp	/^  static const int PREFETCH_COUNT = 3;$/;"	m	class:caffe::BasePrefetchingDataLayer
+Reshape	caffe/data_layers.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::BaseDataLayer
+Reshape	caffe/data_layers.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::DummyDataLayer
+Reshape	caffe/data_layers.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::HDF5DataLayer
+Reshape	caffe/data_layers.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::HDF5OutputLayer
+ShareInParallel	caffe/data_layers.hpp	/^  virtual inline bool ShareInParallel() const { return false; }$/;"	f	class:caffe::DataLayer
+ShareInParallel	caffe/data_layers.hpp	/^  virtual inline bool ShareInParallel() const { return true; }$/;"	f	class:caffe::BaseDataLayer
+ShareInParallel	caffe/data_layers.hpp	/^  virtual inline bool ShareInParallel() const { return true; }$/;"	f	class:caffe::DummyDataLayer
+ShareInParallel	caffe/data_layers.hpp	/^  virtual inline bool ShareInParallel() const { return true; }$/;"	f	class:caffe::HDF5DataLayer
+ShareInParallel	caffe/data_layers.hpp	/^  virtual inline bool ShareInParallel() const { return true; }$/;"	f	class:caffe::HDF5OutputLayer
+WindowDataLayer	caffe/data_layers.hpp	/^  explicit WindowDataLayer(const LayerParameter& param)$/;"	f	class:caffe::WindowDataLayer
+WindowDataLayer	caffe/data_layers.hpp	/^class WindowDataLayer : public BasePrefetchingDataLayer<Dtype> {$/;"	c	namespace:caffe
+WindowField	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	g	class:caffe::WindowDataLayer
+X1	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+X2	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+Y1	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+Y2	caffe/data_layers.hpp	/^  enum WindowField { IMAGE_INDEX, LABEL, OVERLAP, X1, Y1, X2, Y2, NUM };$/;"	e	enum:caffe::WindowDataLayer::WindowField
+added_data_	caffe/data_layers.hpp	/^  Blob<Dtype> added_data_;$/;"	m	class:caffe::MemoryDataLayer
+added_label_	caffe/data_layers.hpp	/^  Blob<Dtype> added_label_;$/;"	m	class:caffe::MemoryDataLayer
+batch_size	caffe/data_layers.hpp	/^  int batch_size() { return batch_size_; }$/;"	f	class:caffe::MemoryDataLayer
+batch_size_	caffe/data_layers.hpp	/^  int batch_size_, channels_, height_, width_, size_;$/;"	m	class:caffe::MemoryDataLayer
+bg_windows_	caffe/data_layers.hpp	/^  vector<vector<float> > bg_windows_;$/;"	m	class:caffe::WindowDataLayer
+cache_images_	caffe/data_layers.hpp	/^  bool cache_images_;$/;"	m	class:caffe::WindowDataLayer
+caffe	caffe/data_layers.hpp	/^namespace caffe {$/;"	n
+channels	caffe/data_layers.hpp	/^  int channels() { return channels_; }$/;"	f	class:caffe::MemoryDataLayer
+channels_	caffe/data_layers.hpp	/^  int batch_size_, channels_, height_, width_, size_;$/;"	m	class:caffe::MemoryDataLayer
+current_file_	caffe/data_layers.hpp	/^  unsigned int current_file_;$/;"	m	class:caffe::HDF5DataLayer
+current_row_	caffe/data_layers.hpp	/^  hsize_t current_row_;$/;"	m	class:caffe::HDF5DataLayer
+data_	caffe/data_layers.hpp	/^  Blob<Dtype> data_, label_;$/;"	m	class:caffe::Batch
+data_	caffe/data_layers.hpp	/^  Dtype* data_;$/;"	m	class:caffe::MemoryDataLayer
+data_blob_	caffe/data_layers.hpp	/^  Blob<Dtype> data_blob_;$/;"	m	class:caffe::HDF5OutputLayer
+data_mean_	caffe/data_layers.hpp	/^  Blob<Dtype> data_mean_;$/;"	m	class:caffe::WindowDataLayer
+data_permutation_	caffe/data_layers.hpp	/^  std::vector<unsigned int> data_permutation_;$/;"	m	class:caffe::HDF5DataLayer
+data_transformer_	caffe/data_layers.hpp	/^  shared_ptr<DataTransformer<Dtype> > data_transformer_;$/;"	m	class:caffe::BaseDataLayer
+fg_windows_	caffe/data_layers.hpp	/^  vector<vector<float> > fg_windows_;$/;"	m	class:caffe::WindowDataLayer
+file_id_	caffe/data_layers.hpp	/^  hid_t file_id_;$/;"	m	class:caffe::HDF5OutputLayer
+file_name	caffe/data_layers.hpp	/^  inline std::string file_name() const { return file_name_; }$/;"	f	class:caffe::HDF5OutputLayer
+file_name_	caffe/data_layers.hpp	/^  std::string file_name_;$/;"	m	class:caffe::HDF5OutputLayer
+file_opened_	caffe/data_layers.hpp	/^  bool file_opened_;$/;"	m	class:caffe::HDF5OutputLayer
+file_permutation_	caffe/data_layers.hpp	/^  std::vector<unsigned int> file_permutation_;$/;"	m	class:caffe::HDF5DataLayer
+fillers_	caffe/data_layers.hpp	/^  vector<shared_ptr<Filler<Dtype> > > fillers_;$/;"	m	class:caffe::DummyDataLayer
+has_mean_file_	caffe/data_layers.hpp	/^  bool has_mean_file_;$/;"	m	class:caffe::WindowDataLayer
+has_mean_values_	caffe/data_layers.hpp	/^  bool has_mean_values_;$/;"	m	class:caffe::WindowDataLayer
+has_new_data_	caffe/data_layers.hpp	/^  bool has_new_data_;$/;"	m	class:caffe::MemoryDataLayer
+hdf_blobs_	caffe/data_layers.hpp	/^  std::vector<shared_ptr<Blob<Dtype> > > hdf_blobs_;$/;"	m	class:caffe::HDF5DataLayer
+hdf_filenames_	caffe/data_layers.hpp	/^  std::vector<std::string> hdf_filenames_;$/;"	m	class:caffe::HDF5DataLayer
+height	caffe/data_layers.hpp	/^  int height() { return height_; }$/;"	f	class:caffe::MemoryDataLayer
+height_	caffe/data_layers.hpp	/^  int batch_size_, channels_, height_, width_, size_;$/;"	m	class:caffe::MemoryDataLayer
+image_database_	caffe/data_layers.hpp	/^  vector<std::pair<std::string, vector<int> > > image_database_;$/;"	m	class:caffe::WindowDataLayer
+image_database_cache_	caffe/data_layers.hpp	/^  vector<std::pair<std::string, Datum > > image_database_cache_;$/;"	m	class:caffe::WindowDataLayer
+label_	caffe/data_layers.hpp	/^  Blob<Dtype> data_, label_;$/;"	m	class:caffe::Batch
+label_blob_	caffe/data_layers.hpp	/^  Blob<Dtype> label_blob_;$/;"	m	class:caffe::HDF5OutputLayer
+labels_	caffe/data_layers.hpp	/^  Dtype* labels_;$/;"	m	class:caffe::MemoryDataLayer
+lines_	caffe/data_layers.hpp	/^  vector<std::pair<std::string, vector<float> > > lines_;$/;"	m	class:caffe::ImageDataLayer
+lines_id_	caffe/data_layers.hpp	/^  int lines_id_;$/;"	m	class:caffe::ImageDataLayer
+mean_values_	caffe/data_layers.hpp	/^  vector<Dtype> mean_values_;$/;"	m	class:caffe::WindowDataLayer
+n_	caffe/data_layers.hpp	/^  int n_;$/;"	m	class:caffe::MemoryDataLayer
+num_files_	caffe/data_layers.hpp	/^  unsigned int num_files_;$/;"	m	class:caffe::HDF5DataLayer
+output_labels_	caffe/data_layers.hpp	/^  bool output_labels_;$/;"	m	class:caffe::BaseDataLayer
+pos_	caffe/data_layers.hpp	/^  size_t pos_;$/;"	m	class:caffe::MemoryDataLayer
+prefetch_	caffe/data_layers.hpp	/^  Batch<Dtype> prefetch_[PREFETCH_COUNT];$/;"	m	class:caffe::BasePrefetchingDataLayer
+prefetch_free_	caffe/data_layers.hpp	/^  BlockingQueue<Batch<Dtype>*> prefetch_free_;$/;"	m	class:caffe::BasePrefetchingDataLayer
+prefetch_full_	caffe/data_layers.hpp	/^  BlockingQueue<Batch<Dtype>*> prefetch_full_;$/;"	m	class:caffe::BasePrefetchingDataLayer
+prefetch_rng_	caffe/data_layers.hpp	/^  shared_ptr<Caffe::RNG> prefetch_rng_;$/;"	m	class:caffe::ImageDataLayer
+prefetch_rng_	caffe/data_layers.hpp	/^  shared_ptr<Caffe::RNG> prefetch_rng_;$/;"	m	class:caffe::WindowDataLayer
+reader_	caffe/data_layers.hpp	/^  DataReader reader_;$/;"	m	class:caffe::DataLayer
+refill_	caffe/data_layers.hpp	/^  vector<bool> refill_;$/;"	m	class:caffe::DummyDataLayer
+size_	caffe/data_layers.hpp	/^  int batch_size_, channels_, height_, width_, size_;$/;"	m	class:caffe::MemoryDataLayer
+transform_param_	caffe/data_layers.hpp	/^  TransformationParameter transform_param_;$/;"	m	class:caffe::BaseDataLayer
+transformed_data_	caffe/data_layers.hpp	/^  Blob<Dtype> transformed_data_;$/;"	m	class:caffe::BasePrefetchingDataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "Data"; }$/;"	f	class:caffe::DataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "DummyData"; }$/;"	f	class:caffe::DummyDataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "HDF5Data"; }$/;"	f	class:caffe::HDF5DataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "HDF5Output"; }$/;"	f	class:caffe::HDF5OutputLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "ImageData"; }$/;"	f	class:caffe::ImageDataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "MemoryData"; }$/;"	f	class:caffe::MemoryDataLayer
+type	caffe/data_layers.hpp	/^  virtual inline const char* type() const { return "WindowData"; }$/;"	f	class:caffe::WindowDataLayer
+width	caffe/data_layers.hpp	/^  int width() { return width_; }$/;"	f	class:caffe::MemoryDataLayer
+width_	caffe/data_layers.hpp	/^  int batch_size_, channels_, height_, width_, size_;$/;"	m	class:caffe::MemoryDataLayer
+Body	caffe/data_reader.hpp	/^  class Body : public InternalThread {$/;"	c	class:caffe::DataReader
+CAFFE_DATA_READER_HPP_	caffe/data_reader.hpp	2;"	d
+DataReader	caffe/data_reader.hpp	/^class DataReader {$/;"	c	namespace:caffe
+QueuePair	caffe/data_reader.hpp	/^  class QueuePair {$/;"	c	class:caffe::DataReader
+bodies_	caffe/data_reader.hpp	/^  static map<const string, boost::weak_ptr<DataReader::Body> > bodies_;$/;"	m	class:caffe::DataReader
+body_	caffe/data_reader.hpp	/^  shared_ptr<Body> body_;$/;"	m	class:caffe::DataReader
+caffe	caffe/data_reader.hpp	/^namespace caffe {$/;"	n
+free	caffe/data_reader.hpp	/^  inline BlockingQueue<Datum*>& free() const {$/;"	f	class:caffe::DataReader
+free_	caffe/data_reader.hpp	/^    BlockingQueue<Datum*> free_;$/;"	m	class:caffe::DataReader::QueuePair
+full	caffe/data_reader.hpp	/^  inline BlockingQueue<Datum*>& full() const {$/;"	f	class:caffe::DataReader
+full_	caffe/data_reader.hpp	/^    BlockingQueue<Datum*> full_;$/;"	m	class:caffe::DataReader::QueuePair
+new_queue_pairs_	caffe/data_reader.hpp	/^    BlockingQueue<shared_ptr<QueuePair> > new_queue_pairs_;$/;"	m	class:caffe::DataReader::Body
+param_	caffe/data_reader.hpp	/^    const LayerParameter param_;$/;"	m	class:caffe::DataReader::Body
+queue_pair_	caffe/data_reader.hpp	/^  const shared_ptr<QueuePair> queue_pair_;$/;"	m	class:caffe::DataReader
+source_key	caffe/data_reader.hpp	/^  static inline string source_key(const LayerParameter& param) {$/;"	f	class:caffe::DataReader
+CAFFE_DATA_TRANSFORMER_HPP	caffe/data_transformer.hpp	2;"	d
+DataTransformer	caffe/data_transformer.hpp	/^class DataTransformer {$/;"	c	namespace:caffe
+caffe	caffe/data_transformer.hpp	/^namespace caffe {$/;"	n
+data_mean_	caffe/data_transformer.hpp	/^  Blob<Dtype> data_mean_;$/;"	m	class:caffe::DataTransformer
+mean_values_	caffe/data_transformer.hpp	/^  vector<Dtype> mean_values_;$/;"	m	class:caffe::DataTransformer
+param_	caffe/data_transformer.hpp	/^  TransformationParameter param_;$/;"	m	class:caffe::DataTransformer
+phase_	caffe/data_transformer.hpp	/^  Phase phase_;$/;"	m	class:caffe::DataTransformer
+rng_	caffe/data_transformer.hpp	/^  shared_ptr<Caffe::RNG> rng_;$/;"	m	class:caffe::DataTransformer
+~DataTransformer	caffe/data_transformer.hpp	/^  virtual ~DataTransformer() {}$/;"	f	class:caffe::DataTransformer
+BilinearFiller	caffe/filler.hpp	/^  explicit BilinearFiller(const FillerParameter& param)$/;"	f	class:caffe::BilinearFiller
+BilinearFiller	caffe/filler.hpp	/^class BilinearFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+CAFFE_FILLER_HPP	caffe/filler.hpp	6;"	d
+ConstantFiller	caffe/filler.hpp	/^  explicit ConstantFiller(const FillerParameter& param)$/;"	f	class:caffe::ConstantFiller
+ConstantFiller	caffe/filler.hpp	/^class ConstantFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::BilinearFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::ConstantFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::GaussianFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::MSRAFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::PositiveUnitballFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::UniformFiller
+Fill	caffe/filler.hpp	/^  virtual void Fill(Blob<Dtype>* blob) {$/;"	f	class:caffe::XavierFiller
+Filler	caffe/filler.hpp	/^  explicit Filler(const FillerParameter& param) : filler_param_(param) {}$/;"	f	class:caffe::Filler
+Filler	caffe/filler.hpp	/^class Filler {$/;"	c	namespace:caffe
+GaussianFiller	caffe/filler.hpp	/^  explicit GaussianFiller(const FillerParameter& param)$/;"	f	class:caffe::GaussianFiller
+GaussianFiller	caffe/filler.hpp	/^class GaussianFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+GetFiller	caffe/filler.hpp	/^Filler<Dtype>* GetFiller(const FillerParameter& param) {$/;"	f	namespace:caffe
+MSRAFiller	caffe/filler.hpp	/^  explicit MSRAFiller(const FillerParameter& param)$/;"	f	class:caffe::MSRAFiller
+MSRAFiller	caffe/filler.hpp	/^class MSRAFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+PositiveUnitballFiller	caffe/filler.hpp	/^  explicit PositiveUnitballFiller(const FillerParameter& param)$/;"	f	class:caffe::PositiveUnitballFiller
+PositiveUnitballFiller	caffe/filler.hpp	/^class PositiveUnitballFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+UniformFiller	caffe/filler.hpp	/^  explicit UniformFiller(const FillerParameter& param)$/;"	f	class:caffe::UniformFiller
+UniformFiller	caffe/filler.hpp	/^class UniformFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+XavierFiller	caffe/filler.hpp	/^  explicit XavierFiller(const FillerParameter& param)$/;"	f	class:caffe::XavierFiller
+XavierFiller	caffe/filler.hpp	/^class XavierFiller : public Filler<Dtype> {$/;"	c	namespace:caffe
+caffe	caffe/filler.hpp	/^namespace caffe {$/;"	n
+filler_param_	caffe/filler.hpp	/^  FillerParameter filler_param_;$/;"	m	class:caffe::Filler
+rand_vec_	caffe/filler.hpp	/^  shared_ptr<SyncedMemory> rand_vec_;$/;"	m	class:caffe::GaussianFiller
+~Filler	caffe/filler.hpp	/^  virtual ~Filler() {}$/;"	f	class:caffe::Filler
+CAFFE_INTERNAL_THREAD_HPP_	caffe/internal_thread.hpp	2;"	d
+InternalThread	caffe/internal_thread.hpp	/^  InternalThread() : thread_() {}$/;"	f	class:caffe::InternalThread
+InternalThread	caffe/internal_thread.hpp	/^class InternalThread {$/;"	c	namespace:caffe
+InternalThreadEntry	caffe/internal_thread.hpp	/^  virtual void InternalThreadEntry() {}$/;"	f	class:caffe::InternalThread
+boost	caffe/internal_thread.hpp	/^namespace boost { class thread; }$/;"	n
+caffe	caffe/internal_thread.hpp	/^namespace caffe {$/;"	n
+thread_	caffe/internal_thread.hpp	/^  shared_ptr<boost::thread> thread_;$/;"	m	class:caffe::InternalThread
+AllowForceBackward	caffe/layer.hpp	/^  virtual inline bool AllowForceBackward(const int bottom_index) const {$/;"	f	class:caffe::Layer
+AutoTopBlobs	caffe/layer.hpp	/^  virtual inline bool AutoTopBlobs() const { return false; }$/;"	f	class:caffe::Layer
+Backward	caffe/layer.hpp	/^inline void Layer<Dtype>::Backward(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::Layer
+Backward_gpu	caffe/layer.hpp	/^  virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::Layer
+CAFFE_LAYER_H_	caffe/layer.hpp	2;"	d
+CheckBlobCounts	caffe/layer.hpp	/^  virtual void CheckBlobCounts(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::Layer
+EqualNumBottomTopBlobs	caffe/layer.hpp	/^  virtual inline bool EqualNumBottomTopBlobs() const { return false; }$/;"	f	class:caffe::Layer
+ExactNumBottomBlobs	caffe/layer.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+ExactNumTopBlobs	caffe/layer.hpp	/^  virtual inline int ExactNumTopBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+Forward	caffe/layer.hpp	/^inline Dtype Layer<Dtype>::Forward(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::Layer
+Forward_gpu	caffe/layer.hpp	/^  virtual void Forward_gpu(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::Layer
+IsShared	caffe/layer.hpp	/^  inline bool IsShared() const { return is_shared_; }$/;"	f	class:caffe::Layer
+Layer	caffe/layer.hpp	/^  explicit Layer(const LayerParameter& param)$/;"	f	class:caffe::Layer
+Layer	caffe/layer.hpp	/^class Layer {$/;"	c	namespace:caffe
+LayerSetUp	caffe/layer.hpp	/^  virtual void LayerSetUp(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::Layer
+MaxBottomBlobs	caffe/layer.hpp	/^  virtual inline int MaxBottomBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+MaxTopBlobs	caffe/layer.hpp	/^  virtual inline int MaxTopBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+MinBottomBlobs	caffe/layer.hpp	/^  virtual inline int MinBottomBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+MinTopBlobs	caffe/layer.hpp	/^  virtual inline int MinTopBlobs() const { return -1; }$/;"	f	class:caffe::Layer
+SetLossWeights	caffe/layer.hpp	/^  inline void SetLossWeights(const vector<Blob<Dtype>*>& top) {$/;"	f	class:caffe::Layer
+SetShared	caffe/layer.hpp	/^  inline void SetShared(bool is_shared) {$/;"	f	class:caffe::Layer
+SetUp	caffe/layer.hpp	/^  void SetUp(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::Layer
+ShareInParallel	caffe/layer.hpp	/^  virtual inline bool ShareInParallel() const { return false; }$/;"	f	class:caffe::Layer
+ToProto	caffe/layer.hpp	/^void Layer<Dtype>::ToProto(LayerParameter* param, bool write_diff) {$/;"	f	class:caffe::Layer
+blobs	caffe/layer.hpp	/^  vector<shared_ptr<Blob<Dtype> > >& blobs() {$/;"	f	class:caffe::Layer
+blobs_	caffe/layer.hpp	/^  vector<shared_ptr<Blob<Dtype> > > blobs_;$/;"	m	class:caffe::Layer
+boost	caffe/layer.hpp	/^namespace boost { class mutex; }$/;"	n
+caffe	caffe/layer.hpp	/^namespace caffe {$/;"	n
+forward_mutex_	caffe/layer.hpp	/^  shared_ptr<boost::mutex> forward_mutex_;$/;"	m	class:caffe::Layer
+is_shared_	caffe/layer.hpp	/^  bool is_shared_;$/;"	m	class:caffe::Layer
+layer_param	caffe/layer.hpp	/^  const LayerParameter& layer_param() const { return layer_param_; }$/;"	f	class:caffe::Layer
+layer_param_	caffe/layer.hpp	/^  LayerParameter layer_param_;$/;"	m	class:caffe::Layer
+loss	caffe/layer.hpp	/^  inline Dtype loss(const int top_index) const {$/;"	f	class:caffe::Layer
+loss_	caffe/layer.hpp	/^  vector<Dtype> loss_;$/;"	m	class:caffe::Layer
+param_propagate_down	caffe/layer.hpp	/^  inline bool param_propagate_down(const int param_id) {$/;"	f	class:caffe::Layer
+param_propagate_down_	caffe/layer.hpp	/^  vector<bool> param_propagate_down_;$/;"	m	class:caffe::Layer
+phase_	caffe/layer.hpp	/^  Phase phase_;$/;"	m	class:caffe::Layer
+set_loss	caffe/layer.hpp	/^  inline void set_loss(const int top_index, const Dtype value) {$/;"	f	class:caffe::Layer
+set_param_propagate_down	caffe/layer.hpp	/^  inline void set_param_propagate_down(const int param_id, const bool value) {$/;"	f	class:caffe::Layer
+type	caffe/layer.hpp	/^  virtual inline const char* type() const { return ""; }$/;"	f	class:caffe::Layer
+~Layer	caffe/layer.hpp	/^  virtual ~Layer() {}$/;"	f	class:caffe::Layer
+AddCreator	caffe/layer_factory.hpp	/^  static void AddCreator(const string& type, Creator creator) {$/;"	f	class:caffe::LayerRegistry
+CAFFE_LAYER_FACTORY_H_	caffe/layer_factory.hpp	40;"	d
+CreateLayer	caffe/layer_factory.hpp	/^  static shared_ptr<Layer<Dtype> > CreateLayer(const LayerParameter& param) {$/;"	f	class:caffe::LayerRegistry
+Creator	caffe/layer_factory.hpp	/^  typedef shared_ptr<Layer<Dtype> > (*Creator)(const LayerParameter&);$/;"	t	class:caffe::LayerRegistry
+CreatorRegistry	caffe/layer_factory.hpp	/^  typedef std::map<string, Creator> CreatorRegistry;$/;"	t	class:caffe::LayerRegistry
+LayerRegisterer	caffe/layer_factory.hpp	/^  LayerRegisterer(const string& type,$/;"	f	class:caffe::LayerRegisterer
+LayerRegisterer	caffe/layer_factory.hpp	/^class LayerRegisterer {$/;"	c	namespace:caffe
+LayerRegistry	caffe/layer_factory.hpp	/^  LayerRegistry() {}$/;"	f	class:caffe::LayerRegistry
+LayerRegistry	caffe/layer_factory.hpp	/^class LayerRegistry {$/;"	c	namespace:caffe
+LayerTypeList	caffe/layer_factory.hpp	/^  static vector<string> LayerTypeList() {$/;"	f	class:caffe::LayerRegistry
+LayerTypeListString	caffe/layer_factory.hpp	/^  static string LayerTypeListString() {$/;"	f	class:caffe::LayerRegistry
+REGISTER_LAYER_CLASS	caffe/layer_factory.hpp	130;"	d
+REGISTER_LAYER_CREATOR	caffe/layer_factory.hpp	126;"	d
+Registry	caffe/layer_factory.hpp	/^  static CreatorRegistry& Registry() {$/;"	f	class:caffe::LayerRegistry
+caffe	caffe/layer_factory.hpp	/^namespace caffe {$/;"	n
+AccuracyLayer	caffe/loss_layers.hpp	/^  explicit AccuracyLayer(const LayerParameter& param)$/;"	f	class:caffe::AccuracyLayer
+AccuracyLayer	caffe/loss_layers.hpp	/^class AccuracyLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+AllowForceBackward	caffe/loss_layers.hpp	/^  virtual inline bool AllowForceBackward(const int bottom_index) const {$/;"	f	class:caffe::ContrastiveLossLayer
+AllowForceBackward	caffe/loss_layers.hpp	/^  virtual inline bool AllowForceBackward(const int bottom_index) const {$/;"	f	class:caffe::EuclideanLossLayer
+AllowForceBackward	caffe/loss_layers.hpp	/^  virtual inline bool AllowForceBackward(const int bottom_index) const {$/;"	f	class:caffe::LossLayer
+AutoTopBlobs	caffe/loss_layers.hpp	/^  virtual inline bool AutoTopBlobs() const { return true; }$/;"	f	class:caffe::LossLayer
+Backward_cpu	caffe/loss_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::AccuracyLayer
+CAFFE_LOSS_LAYERS_HPP_	caffe/loss_layers.hpp	2;"	d
+ContrastiveLossLayer	caffe/loss_layers.hpp	/^  explicit ContrastiveLossLayer(const LayerParameter& param)$/;"	f	class:caffe::ContrastiveLossLayer
+ContrastiveLossLayer	caffe/loss_layers.hpp	/^class ContrastiveLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+EuclideanLossLayer	caffe/loss_layers.hpp	/^  explicit EuclideanLossLayer(const LayerParameter& param)$/;"	f	class:caffe::EuclideanLossLayer
+EuclideanLossLayer	caffe/loss_layers.hpp	/^class EuclideanLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+ExactNumBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return -1; }$/;"	f	class:caffe::InfogainLossLayer
+ExactNumBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 2; }$/;"	f	class:caffe::AccuracyLayer
+ExactNumBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 2; }$/;"	f	class:caffe::LossLayer
+ExactNumBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 3; }$/;"	f	class:caffe::ContrastiveLossLayer
+ExactNumTopBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return -1; }$/;"	f	class:caffe::SoftmaxWithLossLayer
+ExactNumTopBlobs	caffe/loss_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::LossLayer
+HingeLossLayer	caffe/loss_layers.hpp	/^  explicit HingeLossLayer(const LayerParameter& param)$/;"	f	class:caffe::HingeLossLayer
+HingeLossLayer	caffe/loss_layers.hpp	/^class HingeLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+InfogainLossLayer	caffe/loss_layers.hpp	/^  explicit InfogainLossLayer(const LayerParameter& param)$/;"	f	class:caffe::InfogainLossLayer
+InfogainLossLayer	caffe/loss_layers.hpp	/^class InfogainLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+LossLayer	caffe/loss_layers.hpp	/^  explicit LossLayer(const LayerParameter& param)$/;"	f	class:caffe::LossLayer
+LossLayer	caffe/loss_layers.hpp	/^class LossLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+MaxBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int MaxBottomBlobs() const { return 3; }$/;"	f	class:caffe::InfogainLossLayer
+MaxTopBlobs	caffe/loss_layers.hpp	/^  virtual inline int MaxTopBlobs() const { return 2; }$/;"	f	class:caffe::SoftmaxWithLossLayer
+MaxTopBlos	caffe/loss_layers.hpp	/^  virtual inline int MaxTopBlos() const { return 2; }$/;"	f	class:caffe::AccuracyLayer
+MinBottomBlobs	caffe/loss_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 2; }$/;"	f	class:caffe::InfogainLossLayer
+MinTopBlobs	caffe/loss_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::AccuracyLayer
+MinTopBlobs	caffe/loss_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::SoftmaxWithLossLayer
+MultinomialLogisticLossLayer	caffe/loss_layers.hpp	/^  explicit MultinomialLogisticLossLayer(const LayerParameter& param)$/;"	f	class:caffe::MultinomialLogisticLossLayer
+MultinomialLogisticLossLayer	caffe/loss_layers.hpp	/^class MultinomialLogisticLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+SigmoidCrossEntropyLossLayer	caffe/loss_layers.hpp	/^  explicit SigmoidCrossEntropyLossLayer(const LayerParameter& param)$/;"	f	class:caffe::SigmoidCrossEntropyLossLayer
+SigmoidCrossEntropyLossLayer	caffe/loss_layers.hpp	/^class SigmoidCrossEntropyLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+SoftmaxWithLossLayer	caffe/loss_layers.hpp	/^  explicit SoftmaxWithLossLayer(const LayerParameter& param)$/;"	f	class:caffe::SoftmaxWithLossLayer
+SoftmaxWithLossLayer	caffe/loss_layers.hpp	/^class SoftmaxWithLossLayer : public LossLayer<Dtype> {$/;"	c	namespace:caffe
+caffe	caffe/loss_layers.hpp	/^namespace caffe {$/;"	n
+diff_	caffe/loss_layers.hpp	/^  Blob<Dtype> diff_;  \/\/ cached for backward pass$/;"	m	class:caffe::ContrastiveLossLayer
+diff_	caffe/loss_layers.hpp	/^  Blob<Dtype> diff_;$/;"	m	class:caffe::EuclideanLossLayer
+diff_sq_	caffe/loss_layers.hpp	/^  Blob<Dtype> diff_sq_;  \/\/ tmp storage for gpu forward pass$/;"	m	class:caffe::ContrastiveLossLayer
+dist_sq_	caffe/loss_layers.hpp	/^  Blob<Dtype> dist_sq_;  \/\/ cached for backward pass$/;"	m	class:caffe::ContrastiveLossLayer
+has_ignore_label_	caffe/loss_layers.hpp	/^  bool has_ignore_label_;$/;"	m	class:caffe::AccuracyLayer
+has_ignore_label_	caffe/loss_layers.hpp	/^  bool has_ignore_label_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+ignore_label_	caffe/loss_layers.hpp	/^  int ignore_label_;$/;"	m	class:caffe::AccuracyLayer
+ignore_label_	caffe/loss_layers.hpp	/^  int ignore_label_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+infogain_	caffe/loss_layers.hpp	/^  Blob<Dtype> infogain_;$/;"	m	class:caffe::InfogainLossLayer
+inner_num_	caffe/loss_layers.hpp	/^  int label_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::AccuracyLayer
+inner_num_	caffe/loss_layers.hpp	/^  int softmax_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+kLOG_THRESHOLD	caffe/loss_layers.hpp	/^const float kLOG_THRESHOLD = 1e-20;$/;"	m	namespace:caffe
+label_axis_	caffe/loss_layers.hpp	/^  int label_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::AccuracyLayer
+normalize_	caffe/loss_layers.hpp	/^  bool normalize_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+nums_buffer_	caffe/loss_layers.hpp	/^  Blob<Dtype> nums_buffer_;$/;"	m	class:caffe::AccuracyLayer
+outer_num_	caffe/loss_layers.hpp	/^  int label_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::AccuracyLayer
+outer_num_	caffe/loss_layers.hpp	/^  int softmax_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+prob_	caffe/loss_layers.hpp	/^  Blob<Dtype> prob_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+sigmoid_bottom_vec_	caffe/loss_layers.hpp	/^  vector<Blob<Dtype>*> sigmoid_bottom_vec_;$/;"	m	class:caffe::SigmoidCrossEntropyLossLayer
+sigmoid_layer_	caffe/loss_layers.hpp	/^  shared_ptr<SigmoidLayer<Dtype> > sigmoid_layer_;$/;"	m	class:caffe::SigmoidCrossEntropyLossLayer
+sigmoid_output_	caffe/loss_layers.hpp	/^  shared_ptr<Blob<Dtype> > sigmoid_output_;$/;"	m	class:caffe::SigmoidCrossEntropyLossLayer
+sigmoid_top_vec_	caffe/loss_layers.hpp	/^  vector<Blob<Dtype>*> sigmoid_top_vec_;$/;"	m	class:caffe::SigmoidCrossEntropyLossLayer
+softmax_axis_	caffe/loss_layers.hpp	/^  int softmax_axis_, outer_num_, inner_num_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+softmax_bottom_vec_	caffe/loss_layers.hpp	/^  vector<Blob<Dtype>*> softmax_bottom_vec_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+softmax_layer_	caffe/loss_layers.hpp	/^  shared_ptr<Layer<Dtype> > softmax_layer_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+softmax_top_vec_	caffe/loss_layers.hpp	/^  vector<Blob<Dtype>*> softmax_top_vec_;$/;"	m	class:caffe::SoftmaxWithLossLayer
+summer_vec_	caffe/loss_layers.hpp	/^  Blob<Dtype> summer_vec_;  \/\/ tmp storage for gpu forward pass$/;"	m	class:caffe::ContrastiveLossLayer
+top_k_	caffe/loss_layers.hpp	/^  int top_k_;$/;"	m	class:caffe::AccuracyLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "Accuracy"; }$/;"	f	class:caffe::AccuracyLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "ContrastiveLoss"; }$/;"	f	class:caffe::ContrastiveLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "EuclideanLoss"; }$/;"	f	class:caffe::EuclideanLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "HingeLoss"; }$/;"	f	class:caffe::HingeLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "InfogainLoss"; }$/;"	f	class:caffe::InfogainLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "MultinomialLogisticLoss"; }$/;"	f	class:caffe::MultinomialLogisticLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "SigmoidCrossEntropyLoss"; }$/;"	f	class:caffe::SigmoidCrossEntropyLossLayer
+type	caffe/loss_layers.hpp	/^  virtual inline const char* type() const { return "SoftmaxWithLoss"; }$/;"	f	class:caffe::SoftmaxWithLossLayer
+CAFFE_NET_HPP_	caffe/net.hpp	2;"	d
+ForwardBackward	caffe/net.hpp	/^  Dtype ForwardBackward(const vector<Blob<Dtype>* > & bottom) {$/;"	f	class:caffe::Net
+Net	caffe/net.hpp	/^class Net {$/;"	c	namespace:caffe
+blob_loss_weights	caffe/net.hpp	/^  inline const vector<Dtype>& blob_loss_weights() const {$/;"	f	class:caffe::Net
+blob_loss_weights_	caffe/net.hpp	/^  vector<Dtype> blob_loss_weights_;$/;"	m	class:caffe::Net
+blob_names	caffe/net.hpp	/^  inline const vector<string>& blob_names() const { return blob_names_; }$/;"	f	class:caffe::Net
+blob_names_	caffe/net.hpp	/^  vector<string> blob_names_;$/;"	m	class:caffe::Net
+blob_names_index_	caffe/net.hpp	/^  map<string, int> blob_names_index_;$/;"	m	class:caffe::Net
+blob_need_backward_	caffe/net.hpp	/^  vector<bool> blob_need_backward_;$/;"	m	class:caffe::Net
+blobs	caffe/net.hpp	/^  inline const vector<shared_ptr<Blob<Dtype> > >& blobs() const {$/;"	f	class:caffe::Net
+blobs_	caffe/net.hpp	/^  vector<shared_ptr<Blob<Dtype> > > blobs_;$/;"	m	class:caffe::Net
+bottom_id_vecs_	caffe/net.hpp	/^  vector<vector<int> > bottom_id_vecs_;$/;"	m	class:caffe::Net
+bottom_need_backward	caffe/net.hpp	/^  inline const vector<vector<bool> >& bottom_need_backward() const {$/;"	f	class:caffe::Net
+bottom_need_backward_	caffe/net.hpp	/^  vector<vector<bool> > bottom_need_backward_;$/;"	m	class:caffe::Net
+bottom_vecs	caffe/net.hpp	/^  inline const vector<vector<Blob<Dtype>*> >& bottom_vecs() const {$/;"	f	class:caffe::Net
+bottom_vecs_	caffe/net.hpp	/^  vector<vector<Blob<Dtype>*> > bottom_vecs_;$/;"	m	class:caffe::Net
+caffe	caffe/net.hpp	/^namespace caffe {$/;"	n
+debug_info_	caffe/net.hpp	/^  bool debug_info_;$/;"	m	class:caffe::Net
+has_params_decay	caffe/net.hpp	/^  inline const vector<bool>& has_params_decay() const {$/;"	f	class:caffe::Net
+has_params_decay_	caffe/net.hpp	/^  vector<bool> has_params_decay_;$/;"	m	class:caffe::Net
+has_params_lr	caffe/net.hpp	/^  inline const vector<bool>& has_params_lr() const { return has_params_lr_; }$/;"	f	class:caffe::Net
+has_params_lr_	caffe/net.hpp	/^  vector<bool> has_params_lr_;$/;"	m	class:caffe::Net
+input_blob_indices	caffe/net.hpp	/^  inline const vector<int>& input_blob_indices() const {$/;"	f	class:caffe::Net
+input_blobs	caffe/net.hpp	/^  inline const vector<Blob<Dtype>*>& input_blobs() const {$/;"	f	class:caffe::Net
+layer_names	caffe/net.hpp	/^  inline const vector<string>& layer_names() const { return layer_names_; }$/;"	f	class:caffe::Net
+layer_names_	caffe/net.hpp	/^  vector<string> layer_names_;$/;"	m	class:caffe::Net
+layer_names_index_	caffe/net.hpp	/^  map<string, int> layer_names_index_;$/;"	m	class:caffe::Net
+layer_need_backward	caffe/net.hpp	/^  inline const vector<bool>& layer_need_backward() const {$/;"	f	class:caffe::Net
+layer_need_backward_	caffe/net.hpp	/^  vector<bool> layer_need_backward_;$/;"	m	class:caffe::Net
+layers	caffe/net.hpp	/^  inline const vector<shared_ptr<Layer<Dtype> > >& layers() const {$/;"	f	class:caffe::Net
+layers_	caffe/net.hpp	/^  vector<shared_ptr<Layer<Dtype> > > layers_;$/;"	m	class:caffe::Net
+learnable_param_ids_	caffe/net.hpp	/^  vector<int> learnable_param_ids_;$/;"	m	class:caffe::Net
+learnable_params	caffe/net.hpp	/^  inline const vector<Blob<Dtype>*>& learnable_params() const {$/;"	f	class:caffe::Net
+learnable_params_	caffe/net.hpp	/^  vector<Blob<Dtype>*> learnable_params_;$/;"	m	class:caffe::Net
+memory_used_	caffe/net.hpp	/^  size_t memory_used_;$/;"	m	class:caffe::Net
+name	caffe/net.hpp	/^  inline const string& name() const { return name_; }$/;"	f	class:caffe::Net
+name_	caffe/net.hpp	/^  string name_;$/;"	m	class:caffe::Net
+net_input_blob_indices_	caffe/net.hpp	/^  vector<int> net_input_blob_indices_;$/;"	m	class:caffe::Net
+net_input_blobs_	caffe/net.hpp	/^  vector<Blob<Dtype>*> net_input_blobs_;$/;"	m	class:caffe::Net
+net_output_blob_indices_	caffe/net.hpp	/^  vector<int> net_output_blob_indices_;$/;"	m	class:caffe::Net
+net_output_blobs_	caffe/net.hpp	/^  vector<Blob<Dtype>*> net_output_blobs_;$/;"	m	class:caffe::Net
+num_inputs	caffe/net.hpp	/^  inline int num_inputs() const { return net_input_blobs_.size(); }$/;"	f	class:caffe::Net
+num_outputs	caffe/net.hpp	/^  inline int num_outputs() const { return net_output_blobs_.size(); }$/;"	f	class:caffe::Net
+output_blob_indices	caffe/net.hpp	/^  inline const vector<int>& output_blob_indices() const {$/;"	f	class:caffe::Net
+output_blobs	caffe/net.hpp	/^  inline const vector<Blob<Dtype>*>& output_blobs() const {$/;"	f	class:caffe::Net
+param_display_names_	caffe/net.hpp	/^  vector<string> param_display_names_;$/;"	m	class:caffe::Net
+param_id_vecs_	caffe/net.hpp	/^  vector<vector<int> > param_id_vecs_;$/;"	m	class:caffe::Net
+param_layer_indices_	caffe/net.hpp	/^  vector<pair<int, int> > param_layer_indices_;$/;"	m	class:caffe::Net
+param_names_index	caffe/net.hpp	/^  const map<string, int>& param_names_index() const {$/;"	f	class:caffe::Net
+param_names_index_	caffe/net.hpp	/^  map<string, int> param_names_index_;$/;"	m	class:caffe::Net
+param_owners	caffe/net.hpp	/^  inline const vector<int>& param_owners() const { return param_owners_; }$/;"	f	class:caffe::Net
+param_owners_	caffe/net.hpp	/^  vector<int> param_owners_;$/;"	m	class:caffe::Net
+params	caffe/net.hpp	/^  inline const vector<shared_ptr<Blob<Dtype> > >& params() const {$/;"	f	class:caffe::Net
+params_	caffe/net.hpp	/^  vector<shared_ptr<Blob<Dtype> > > params_;$/;"	m	class:caffe::Net
+params_lr	caffe/net.hpp	/^  inline const vector<float>& params_lr() const { return params_lr_; }$/;"	f	class:caffe::Net
+params_lr_	caffe/net.hpp	/^  vector<float> params_lr_;$/;"	m	class:caffe::Net
+params_weight_decay	caffe/net.hpp	/^  inline const vector<float>& params_weight_decay() const {$/;"	f	class:caffe::Net
+params_weight_decay_	caffe/net.hpp	/^  vector<float> params_weight_decay_;$/;"	m	class:caffe::Net
+phase	caffe/net.hpp	/^  inline Phase phase() const { return phase_; }$/;"	f	class:caffe::Net
+phase_	caffe/net.hpp	/^  Phase phase_;$/;"	m	class:caffe::Net
+root_net_	caffe/net.hpp	/^  const Net* const root_net_;$/;"	m	class:caffe::Net
+set_debug_info	caffe/net.hpp	/^  void set_debug_info(const bool value) { debug_info_ = value; }$/;"	f	class:caffe::Net
+top_id_vecs_	caffe/net.hpp	/^  vector<vector<int> > top_id_vecs_;$/;"	m	class:caffe::Net
+top_vecs	caffe/net.hpp	/^  inline const vector<vector<Blob<Dtype>*> >& top_vecs() const {$/;"	f	class:caffe::Net
+top_vecs_	caffe/net.hpp	/^  vector<vector<Blob<Dtype>*> > top_vecs_;$/;"	m	class:caffe::Net
+~Net	caffe/net.hpp	/^  virtual ~Net() {}$/;"	f	class:caffe::Net
+AbsValLayer	caffe/neuron_layers.hpp	/^  explicit AbsValLayer(const LayerParameter& param)$/;"	f	class:caffe::AbsValLayer
+AbsValLayer	caffe/neuron_layers.hpp	/^class AbsValLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+BNLLLayer	caffe/neuron_layers.hpp	/^  explicit BNLLLayer(const LayerParameter& param)$/;"	f	class:caffe::BNLLLayer
+BNLLLayer	caffe/neuron_layers.hpp	/^class BNLLLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+Backward_cpu	caffe/neuron_layers.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::ThresholdLayer
+CAFFE_NEURON_LAYERS_HPP_	caffe/neuron_layers.hpp	2;"	d
+CuDNNReLULayer	caffe/neuron_layers.hpp	/^  explicit CuDNNReLULayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNReLULayer
+CuDNNReLULayer	caffe/neuron_layers.hpp	/^class CuDNNReLULayer : public ReLULayer<Dtype> {$/;"	c	namespace:caffe
+CuDNNSigmoidLayer	caffe/neuron_layers.hpp	/^  explicit CuDNNSigmoidLayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNSigmoidLayer
+CuDNNSigmoidLayer	caffe/neuron_layers.hpp	/^class CuDNNSigmoidLayer : public SigmoidLayer<Dtype> {$/;"	c	namespace:caffe
+CuDNNTanHLayer	caffe/neuron_layers.hpp	/^  explicit CuDNNTanHLayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNTanHLayer
+CuDNNTanHLayer	caffe/neuron_layers.hpp	/^class CuDNNTanHLayer : public TanHLayer<Dtype> {$/;"	c	namespace:caffe
+DropoutLayer	caffe/neuron_layers.hpp	/^  explicit DropoutLayer(const LayerParameter& param)$/;"	f	class:caffe::DropoutLayer
+DropoutLayer	caffe/neuron_layers.hpp	/^class DropoutLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+ExactNumBottomBlobs	caffe/neuron_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::AbsValLayer
+ExactNumBottomBlobs	caffe/neuron_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::NeuronLayer
+ExactNumTopBlobs	caffe/neuron_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::AbsValLayer
+ExactNumTopBlobs	caffe/neuron_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::NeuronLayer
+ExpLayer	caffe/neuron_layers.hpp	/^  explicit ExpLayer(const LayerParameter& param)$/;"	f	class:caffe::ExpLayer
+ExpLayer	caffe/neuron_layers.hpp	/^class ExpLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+HDF5_DATA_DATASET_NAME	caffe/neuron_layers.hpp	13;"	d
+HDF5_DATA_LABEL_NAME	caffe/neuron_layers.hpp	14;"	d
+LogLayer	caffe/neuron_layers.hpp	/^  explicit LogLayer(const LayerParameter& param)$/;"	f	class:caffe::LogLayer
+LogLayer	caffe/neuron_layers.hpp	/^class LogLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+NeuronLayer	caffe/neuron_layers.hpp	/^  explicit NeuronLayer(const LayerParameter& param)$/;"	f	class:caffe::NeuronLayer
+NeuronLayer	caffe/neuron_layers.hpp	/^class NeuronLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+PReLULayer	caffe/neuron_layers.hpp	/^  explicit PReLULayer(const LayerParameter& param)$/;"	f	class:caffe::PReLULayer
+PReLULayer	caffe/neuron_layers.hpp	/^class PReLULayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+PowerLayer	caffe/neuron_layers.hpp	/^  explicit PowerLayer(const LayerParameter& param)$/;"	f	class:caffe::PowerLayer
+PowerLayer	caffe/neuron_layers.hpp	/^class PowerLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+ReLULayer	caffe/neuron_layers.hpp	/^  explicit ReLULayer(const LayerParameter& param)$/;"	f	class:caffe::ReLULayer
+ReLULayer	caffe/neuron_layers.hpp	/^class ReLULayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+SigmoidLayer	caffe/neuron_layers.hpp	/^  explicit SigmoidLayer(const LayerParameter& param)$/;"	f	class:caffe::SigmoidLayer
+SigmoidLayer	caffe/neuron_layers.hpp	/^class SigmoidLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+TanHLayer	caffe/neuron_layers.hpp	/^  explicit TanHLayer(const LayerParameter& param)$/;"	f	class:caffe::TanHLayer
+TanHLayer	caffe/neuron_layers.hpp	/^class TanHLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+ThresholdLayer	caffe/neuron_layers.hpp	/^  explicit ThresholdLayer(const LayerParameter& param)$/;"	f	class:caffe::ThresholdLayer
+ThresholdLayer	caffe/neuron_layers.hpp	/^class ThresholdLayer : public NeuronLayer<Dtype> {$/;"	c	namespace:caffe
+backward_buff_	caffe/neuron_layers.hpp	/^  Blob<Dtype> backward_buff_;  \/\/ temporary buffer for backward computation$/;"	m	class:caffe::PReLULayer
+backward_num_scale_	caffe/neuron_layers.hpp	/^  Dtype backward_num_scale_;$/;"	m	class:caffe::LogLayer
+base_scale_	caffe/neuron_layers.hpp	/^  Dtype base_scale_;$/;"	m	class:caffe::LogLayer
+bottom_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_;$/;"	m	class:caffe::CuDNNReLULayer
+bottom_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_;$/;"	m	class:caffe::CuDNNSigmoidLayer
+bottom_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_;$/;"	m	class:caffe::CuDNNTanHLayer
+bottom_memory_	caffe/neuron_layers.hpp	/^  Blob<Dtype> bottom_memory_;  \/\/ memory for in-place computation$/;"	m	class:caffe::PReLULayer
+caffe	caffe/neuron_layers.hpp	/^namespace caffe {$/;"	n
+channel_shared_	caffe/neuron_layers.hpp	/^  bool channel_shared_;$/;"	m	class:caffe::PReLULayer
+diff_scale_	caffe/neuron_layers.hpp	/^  Dtype diff_scale_;$/;"	m	class:caffe::PowerLayer
+handle_	caffe/neuron_layers.hpp	/^  cudnnHandle_t             handle_;$/;"	m	class:caffe::CuDNNReLULayer
+handle_	caffe/neuron_layers.hpp	/^  cudnnHandle_t             handle_;$/;"	m	class:caffe::CuDNNSigmoidLayer
+handle_	caffe/neuron_layers.hpp	/^  cudnnHandle_t             handle_;$/;"	m	class:caffe::CuDNNTanHLayer
+handles_setup_	caffe/neuron_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNReLULayer
+handles_setup_	caffe/neuron_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNSigmoidLayer
+handles_setup_	caffe/neuron_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNTanHLayer
+inner_scale_	caffe/neuron_layers.hpp	/^  Dtype inner_scale_, outer_scale_;$/;"	m	class:caffe::ExpLayer
+input_scale_	caffe/neuron_layers.hpp	/^  Dtype input_scale_, input_shift_;$/;"	m	class:caffe::LogLayer
+input_shift_	caffe/neuron_layers.hpp	/^  Dtype input_scale_, input_shift_;$/;"	m	class:caffe::LogLayer
+multiplier_	caffe/neuron_layers.hpp	/^  Blob<Dtype> multiplier_;  \/\/ dot multiplier for backward computation of params$/;"	m	class:caffe::PReLULayer
+outer_scale_	caffe/neuron_layers.hpp	/^  Dtype inner_scale_, outer_scale_;$/;"	m	class:caffe::ExpLayer
+power_	caffe/neuron_layers.hpp	/^  Dtype power_;$/;"	m	class:caffe::PowerLayer
+rand_vec_	caffe/neuron_layers.hpp	/^  Blob<unsigned int> rand_vec_;$/;"	m	class:caffe::DropoutLayer
+scale_	caffe/neuron_layers.hpp	/^  Dtype scale_;$/;"	m	class:caffe::DropoutLayer
+scale_	caffe/neuron_layers.hpp	/^  Dtype scale_;$/;"	m	class:caffe::PowerLayer
+shift_	caffe/neuron_layers.hpp	/^  Dtype shift_;$/;"	m	class:caffe::PowerLayer
+threshold_	caffe/neuron_layers.hpp	/^  Dtype threshold_;$/;"	m	class:caffe::DropoutLayer
+threshold_	caffe/neuron_layers.hpp	/^  Dtype threshold_;$/;"	m	class:caffe::ThresholdLayer
+top_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t top_desc_;$/;"	m	class:caffe::CuDNNReLULayer
+top_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t top_desc_;$/;"	m	class:caffe::CuDNNSigmoidLayer
+top_desc_	caffe/neuron_layers.hpp	/^  cudnnTensorDescriptor_t top_desc_;$/;"	m	class:caffe::CuDNNTanHLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "AbsVal"; }$/;"	f	class:caffe::AbsValLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "BNLL"; }$/;"	f	class:caffe::BNLLLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Dropout"; }$/;"	f	class:caffe::DropoutLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Exp"; }$/;"	f	class:caffe::ExpLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Log"; }$/;"	f	class:caffe::LogLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "PReLU"; }$/;"	f	class:caffe::PReLULayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Power"; }$/;"	f	class:caffe::PowerLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "ReLU"; }$/;"	f	class:caffe::ReLULayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Sigmoid"; }$/;"	f	class:caffe::SigmoidLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "TanH"; }$/;"	f	class:caffe::TanHLayer
+type	caffe/neuron_layers.hpp	/^  virtual inline const char* type() const { return "Threshold"; }$/;"	f	class:caffe::ThresholdLayer
+uint_thres_	caffe/neuron_layers.hpp	/^  unsigned int uint_thres_;$/;"	m	class:caffe::DropoutLayer
+CAFFE_PARALLEL_HPP_	caffe/parallel.hpp	2;"	d
+DevicePair	caffe/parallel.hpp	/^  DevicePair(int parent, int device)$/;"	f	class:caffe::DevicePair
+DevicePair	caffe/parallel.hpp	/^class DevicePair {$/;"	c	namespace:caffe
+GPUParams	caffe/parallel.hpp	/^class GPUParams : public Params<Dtype> {$/;"	c	namespace:caffe
+P2PSync	caffe/parallel.hpp	/^class P2PSync : public GPUParams<Dtype>, public Solver<Dtype>::Callback,$/;"	c	namespace:caffe
+Params	caffe/parallel.hpp	/^class Params {$/;"	c	namespace:caffe
+caffe	caffe/parallel.hpp	/^namespace caffe {$/;"	n
+children_	caffe/parallel.hpp	/^  vector<P2PSync<Dtype>*> children_;$/;"	m	class:caffe::P2PSync
+data	caffe/parallel.hpp	/^  inline Dtype* data() const {$/;"	f	class:caffe::Params
+data_	caffe/parallel.hpp	/^  Dtype* data_;                 \/\/ Network parameters$/;"	m	class:caffe::Params
+device	caffe/parallel.hpp	/^  inline int device() {$/;"	f	class:caffe::DevicePair
+device_	caffe/parallel.hpp	/^  int device_;$/;"	m	class:caffe::DevicePair
+diff	caffe/parallel.hpp	/^  inline Dtype* diff() const {$/;"	f	class:caffe::Params
+diff_	caffe/parallel.hpp	/^  Dtype* diff_;                 \/\/ Gradient$/;"	m	class:caffe::Params
+initial_iter_	caffe/parallel.hpp	/^  const int initial_iter_;$/;"	m	class:caffe::P2PSync
+parent	caffe/parallel.hpp	/^  inline int parent() {$/;"	f	class:caffe::DevicePair
+parent_	caffe/parallel.hpp	/^  P2PSync<Dtype>* parent_;$/;"	m	class:caffe::P2PSync
+parent_	caffe/parallel.hpp	/^  int parent_;$/;"	m	class:caffe::DevicePair
+parent_grads_	caffe/parallel.hpp	/^  Dtype* parent_grads_;$/;"	m	class:caffe::P2PSync
+queue_	caffe/parallel.hpp	/^  BlockingQueue<P2PSync<Dtype>*> queue_;$/;"	m	class:caffe::P2PSync
+size	caffe/parallel.hpp	/^  inline size_t size() const {$/;"	f	class:caffe::Params
+size_	caffe/parallel.hpp	/^  const size_t size_;           \/\/ Size of buffers$/;"	m	class:caffe::Params
+solver	caffe/parallel.hpp	/^  inline const shared_ptr<Solver<Dtype> >& solver() const {$/;"	f	class:caffe::P2PSync
+solver_	caffe/parallel.hpp	/^  shared_ptr<Solver<Dtype> > solver_;$/;"	m	class:caffe::P2PSync
+~Params	caffe/parallel.hpp	/^  virtual ~Params() {$/;"	f	class:caffe::Params
+Backward_cpu	caffe/python_layer.hpp	/^  virtual void Backward_cpu(const vector<Blob<Dtype>*>& top,$/;"	f	class:caffe::PythonLayer
+CAFFE_PYTHON_LAYER_HPP_	caffe/python_layer.hpp	2;"	d
+Forward_cpu	caffe/python_layer.hpp	/^  virtual void Forward_cpu(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::PythonLayer
+LayerSetUp	caffe/python_layer.hpp	/^  virtual void LayerSetUp(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::PythonLayer
+PythonLayer	caffe/python_layer.hpp	/^  PythonLayer(PyObject* self, const LayerParameter& param)$/;"	f	class:caffe::PythonLayer
+PythonLayer	caffe/python_layer.hpp	/^class PythonLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+Reshape	caffe/python_layer.hpp	/^  virtual void Reshape(const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::PythonLayer
+ShareInParallel	caffe/python_layer.hpp	/^  virtual inline bool ShareInParallel() const {$/;"	f	class:caffe::PythonLayer
+caffe	caffe/python_layer.hpp	/^namespace caffe {$/;"	n
+self_	caffe/python_layer.hpp	/^  bp::object self_;$/;"	m	class:caffe::PythonLayer
+type	caffe/python_layer.hpp	/^  virtual inline const char* type() const { return "Python"; }$/;"	f	class:caffe::PythonLayer
+ActionCallback	caffe/solver.hpp	/^typedef boost::function<SolverAction::Enum()> ActionCallback;$/;"	t	namespace:caffe
+AdaDeltaSolver	caffe/solver.hpp	/^  explicit AdaDeltaSolver(const SolverParameter& param)$/;"	f	class:caffe::AdaDeltaSolver
+AdaDeltaSolver	caffe/solver.hpp	/^  explicit AdaDeltaSolver(const string& param_file)$/;"	f	class:caffe::AdaDeltaSolver
+AdaDeltaSolver	caffe/solver.hpp	/^class AdaDeltaSolver : public SGDSolver<Dtype> {$/;"	c	namespace:caffe
+AdaGradSolver	caffe/solver.hpp	/^  explicit AdaGradSolver(const SolverParameter& param)$/;"	f	class:caffe::AdaGradSolver
+AdaGradSolver	caffe/solver.hpp	/^  explicit AdaGradSolver(const string& param_file)$/;"	f	class:caffe::AdaGradSolver
+AdaGradSolver	caffe/solver.hpp	/^class AdaGradSolver : public SGDSolver<Dtype> {$/;"	c	namespace:caffe
+AdamSolver	caffe/solver.hpp	/^  explicit AdamSolver(const SolverParameter& param)$/;"	f	class:caffe::AdamSolver
+AdamSolver	caffe/solver.hpp	/^  explicit AdamSolver(const string& param_file)$/;"	f	class:caffe::AdamSolver
+AdamSolver	caffe/solver.hpp	/^class AdamSolver : public SGDSolver<Dtype> {$/;"	c	namespace:caffe
+ApplyUpdate	caffe/solver.hpp	/^  void ApplyUpdate() {}$/;"	f	class:caffe::WorkerSolver
+CAFFE_OPTIMIZATION_SOLVER_HPP_	caffe/solver.hpp	2;"	d
+Callback	caffe/solver.hpp	/^  class Callback {$/;"	c	class:caffe::Solver
+Enum	caffe/solver.hpp	/^    enum Enum {$/;"	g	namespace:caffe::SolverAction
+GetSolver	caffe/solver.hpp	/^Solver<Dtype>* GetSolver(const SolverParameter& param) {$/;"	f	namespace:caffe
+NONE	caffe/solver.hpp	/^      NONE = 0,  \/\/ Take no special action.$/;"	e	enum:caffe::SolverAction::Enum
+NesterovSolver	caffe/solver.hpp	/^  explicit NesterovSolver(const SolverParameter& param)$/;"	f	class:caffe::NesterovSolver
+NesterovSolver	caffe/solver.hpp	/^  explicit NesterovSolver(const string& param_file)$/;"	f	class:caffe::NesterovSolver
+NesterovSolver	caffe/solver.hpp	/^class NesterovSolver : public SGDSolver<Dtype> {$/;"	c	namespace:caffe
+RMSPropSolver	caffe/solver.hpp	/^  explicit RMSPropSolver(const SolverParameter& param)$/;"	f	class:caffe::RMSPropSolver
+RMSPropSolver	caffe/solver.hpp	/^  explicit RMSPropSolver(const string& param_file)$/;"	f	class:caffe::RMSPropSolver
+RMSPropSolver	caffe/solver.hpp	/^class RMSPropSolver : public SGDSolver<Dtype> {$/;"	c	namespace:caffe
+RestoreSolverStateFromBinaryProto	caffe/solver.hpp	/^  void RestoreSolverStateFromBinaryProto(const string& state_file) {$/;"	f	class:caffe::WorkerSolver
+RestoreSolverStateFromHDF5	caffe/solver.hpp	/^  void RestoreSolverStateFromHDF5(const string& state_file) {$/;"	f	class:caffe::WorkerSolver
+SGDSolver	caffe/solver.hpp	/^  explicit SGDSolver(const SolverParameter& param)$/;"	f	class:caffe::SGDSolver
+SGDSolver	caffe/solver.hpp	/^  explicit SGDSolver(const string& param_file)$/;"	f	class:caffe::SGDSolver
+SGDSolver	caffe/solver.hpp	/^class SGDSolver : public Solver<Dtype> {$/;"	c	namespace:caffe
+SNAPSHOT	caffe/solver.hpp	/^      SNAPSHOT = 2  \/\/ Take a snapshot, and keep training.$/;"	e	enum:caffe::SolverAction::Enum
+STOP	caffe/solver.hpp	/^      STOP = 1,  \/\/ Stop training. snapshot_after_train controls whether a$/;"	e	enum:caffe::SolverAction::Enum
+SnapshotSolverState	caffe/solver.hpp	/^  void SnapshotSolverState(const string& model_filename) {$/;"	f	class:caffe::WorkerSolver
+Solve	caffe/solver.hpp	/^  inline void Solve(const string resume_file) { Solve(resume_file.c_str()); }$/;"	f	class:caffe::Solver
+Solver	caffe/solver.hpp	/^class Solver {$/;"	c	namespace:caffe
+SolverAction	caffe/solver.hpp	/^  namespace SolverAction {$/;"	n	namespace:caffe
+WorkerSolver	caffe/solver.hpp	/^  explicit WorkerSolver(const SolverParameter& param,$/;"	f	class:caffe::WorkerSolver
+WorkerSolver	caffe/solver.hpp	/^class WorkerSolver : public Solver<Dtype> {$/;"	c	namespace:caffe
+action_request_function_	caffe/solver.hpp	/^  ActionCallback action_request_function_;$/;"	m	class:caffe::Solver
+add_callback	caffe/solver.hpp	/^  void add_callback(Callback* value) {$/;"	f	class:caffe::Solver
+caffe	caffe/solver.hpp	/^namespace caffe {$/;"	n
+callbacks	caffe/solver.hpp	/^  const vector<Callback*>& callbacks() const { return callbacks_; }$/;"	f	class:caffe::Solver
+callbacks_	caffe/solver.hpp	/^  vector<Callback*> callbacks_;$/;"	m	class:caffe::Solver
+constructor_sanity_check	caffe/solver.hpp	/^  void constructor_sanity_check() {$/;"	f	class:caffe::AdaGradSolver
+constructor_sanity_check	caffe/solver.hpp	/^  void constructor_sanity_check() {$/;"	f	class:caffe::RMSPropSolver
+current_step_	caffe/solver.hpp	/^  int current_step_;$/;"	m	class:caffe::Solver
+history	caffe/solver.hpp	/^  const vector<shared_ptr<Blob<Dtype> > >& history() { return history_; }$/;"	f	class:caffe::SGDSolver
+history_	caffe/solver.hpp	/^  vector<shared_ptr<Blob<Dtype> > > history_, update_, temp_;$/;"	m	class:caffe::SGDSolver
+iter	caffe/solver.hpp	/^  int iter() { return iter_; }$/;"	f	class:caffe::Solver
+iter_	caffe/solver.hpp	/^  int iter_;$/;"	m	class:caffe::Solver
+net	caffe/solver.hpp	/^  inline shared_ptr<Net<Dtype> > net() { return net_; }$/;"	f	class:caffe::Solver
+net_	caffe/solver.hpp	/^  shared_ptr<Net<Dtype> > net_;$/;"	m	class:caffe::Solver
+param	caffe/solver.hpp	/^  inline const SolverParameter& param() const { return param_; }$/;"	f	class:caffe::Solver
+param_	caffe/solver.hpp	/^  SolverParameter param_;$/;"	m	class:caffe::Solver
+requested_early_exit_	caffe/solver.hpp	/^  bool requested_early_exit_;$/;"	m	class:caffe::Solver
+root_solver_	caffe/solver.hpp	/^  const Solver* const root_solver_;$/;"	m	class:caffe::Solver
+temp_	caffe/solver.hpp	/^  vector<shared_ptr<Blob<Dtype> > > history_, update_, temp_;$/;"	m	class:caffe::SGDSolver
+test_nets	caffe/solver.hpp	/^  inline const vector<shared_ptr<Net<Dtype> > >& test_nets() {$/;"	f	class:caffe::Solver
+test_nets_	caffe/solver.hpp	/^  vector<shared_ptr<Net<Dtype> > > test_nets_;$/;"	m	class:caffe::Solver
+update_	caffe/solver.hpp	/^  vector<shared_ptr<Blob<Dtype> > > history_, update_, temp_;$/;"	m	class:caffe::SGDSolver
+~Solver	caffe/solver.hpp	/^  virtual ~Solver() {}$/;"	f	class:caffe::Solver
+CAFFE_SYNCEDMEM_HPP_	caffe/syncedmem.hpp	2;"	d
+CaffeFreeHost	caffe/syncedmem.hpp	/^inline void CaffeFreeHost(void* ptr) {$/;"	f	namespace:caffe
+CaffeMallocHost	caffe/syncedmem.hpp	/^inline void CaffeMallocHost(void** ptr, size_t size) {$/;"	f	namespace:caffe
+HEAD_AT_CPU	caffe/syncedmem.hpp	/^  enum SyncedHead { UNINITIALIZED, HEAD_AT_CPU, HEAD_AT_GPU, SYNCED };$/;"	e	enum:caffe::SyncedMemory::SyncedHead
+HEAD_AT_GPU	caffe/syncedmem.hpp	/^  enum SyncedHead { UNINITIALIZED, HEAD_AT_CPU, HEAD_AT_GPU, SYNCED };$/;"	e	enum:caffe::SyncedMemory::SyncedHead
+SYNCED	caffe/syncedmem.hpp	/^  enum SyncedHead { UNINITIALIZED, HEAD_AT_CPU, HEAD_AT_GPU, SYNCED };$/;"	e	enum:caffe::SyncedMemory::SyncedHead
+SyncedHead	caffe/syncedmem.hpp	/^  enum SyncedHead { UNINITIALIZED, HEAD_AT_CPU, HEAD_AT_GPU, SYNCED };$/;"	g	class:caffe::SyncedMemory
+SyncedMemory	caffe/syncedmem.hpp	/^  SyncedMemory()$/;"	f	class:caffe::SyncedMemory
+SyncedMemory	caffe/syncedmem.hpp	/^  explicit SyncedMemory(size_t size)$/;"	f	class:caffe::SyncedMemory
+SyncedMemory	caffe/syncedmem.hpp	/^class SyncedMemory {$/;"	c	namespace:caffe
+UNINITIALIZED	caffe/syncedmem.hpp	/^  enum SyncedHead { UNINITIALIZED, HEAD_AT_CPU, HEAD_AT_GPU, SYNCED };$/;"	e	enum:caffe::SyncedMemory::SyncedHead
+caffe	caffe/syncedmem.hpp	/^namespace caffe {$/;"	n
+cpu_ptr_	caffe/syncedmem.hpp	/^  void* cpu_ptr_;$/;"	m	class:caffe::SyncedMemory
+gpu_device_	caffe/syncedmem.hpp	/^  int gpu_device_;$/;"	m	class:caffe::SyncedMemory
+gpu_ptr_	caffe/syncedmem.hpp	/^  void* gpu_ptr_;$/;"	m	class:caffe::SyncedMemory
+head	caffe/syncedmem.hpp	/^  SyncedHead head() { return head_; }$/;"	f	class:caffe::SyncedMemory
+head_	caffe/syncedmem.hpp	/^  SyncedHead head_;$/;"	m	class:caffe::SyncedMemory
+own_cpu_data_	caffe/syncedmem.hpp	/^  bool own_cpu_data_;$/;"	m	class:caffe::SyncedMemory
+own_gpu_data_	caffe/syncedmem.hpp	/^  bool own_gpu_data_;$/;"	m	class:caffe::SyncedMemory
+size	caffe/syncedmem.hpp	/^  size_t size() { return size_; }$/;"	f	class:caffe::SyncedMemory
+size_	caffe/syncedmem.hpp	/^  size_t size_;$/;"	m	class:caffe::SyncedMemory
+CAFFE_TEST_TEST_CAFFE_MAIN_HPP_	caffe/test/test_caffe_main.hpp	4;"	d
+CPUDevice	caffe/test/test_caffe_main.hpp	/^struct CPUDevice {$/;"	s	namespace:caffe
+CPUDeviceTest	caffe/test/test_caffe_main.hpp	/^class CPUDeviceTest : public MultiDeviceTest<CPUDevice<Dtype> > {$/;"	c	namespace:caffe
+Dtype	caffe/test/test_caffe_main.hpp	/^  typedef TypeParam Dtype;$/;"	t	struct:caffe::CPUDevice
+Dtype	caffe/test/test_caffe_main.hpp	/^  typedef TypeParam Dtype;$/;"	t	struct:caffe::GPUDevice
+Dtype	caffe/test/test_caffe_main.hpp	/^  typedef typename TypeParam::Dtype Dtype;$/;"	t	class:caffe::MultiDeviceTest
+GPUDevice	caffe/test/test_caffe_main.hpp	/^struct GPUDevice {$/;"	s	namespace:caffe
+GPUDeviceTest	caffe/test/test_caffe_main.hpp	/^class GPUDeviceTest : public MultiDeviceTest<GPUDevice<Dtype> > {$/;"	c	namespace:caffe
+MultiDeviceTest	caffe/test/test_caffe_main.hpp	/^  MultiDeviceTest() {$/;"	f	class:caffe::MultiDeviceTest
+MultiDeviceTest	caffe/test/test_caffe_main.hpp	/^class MultiDeviceTest : public ::testing::Test {$/;"	c	namespace:caffe
+TestDtypes	caffe/test/test_caffe_main.hpp	/^typedef ::testing::Types<float, double> TestDtypes;$/;"	t	namespace:caffe
+TestDtypesAndDevices	caffe/test/test_caffe_main.hpp	/^                         CPUDevice<double> > TestDtypesAndDevices;$/;"	t	namespace:caffe
+TestDtypesAndDevices	caffe/test/test_caffe_main.hpp	/^                         TestDtypesAndDevices;$/;"	t	namespace:caffe
+caffe	caffe/test/test_caffe_main.hpp	/^namespace caffe {$/;"	n
+device	caffe/test/test_caffe_main.hpp	/^  static const Caffe::Brew device = Caffe::CPU;$/;"	m	struct:caffe::CPUDevice
+device	caffe/test/test_caffe_main.hpp	/^  static const Caffe::Brew device = Caffe::GPU;$/;"	m	struct:caffe::GPUDevice
+~MultiDeviceTest	caffe/test/test_caffe_main.hpp	/^  virtual ~MultiDeviceTest() {}$/;"	f	class:caffe::MultiDeviceTest
+CAFFE_TEST_GRADIENT_CHECK_UTIL_H_	caffe/test/test_gradient_check_util.hpp	2;"	d
+CheckGradient	caffe/test/test_gradient_check_util.hpp	/^  void CheckGradient(Layer<Dtype>* layer, const vector<Blob<Dtype>*>& bottom,$/;"	f	class:caffe::GradientChecker
+CheckGradientEltwise	caffe/test/test_gradient_check_util.hpp	/^void GradientChecker<Dtype>::CheckGradientEltwise(Layer<Dtype>* layer,$/;"	f	class:caffe::GradientChecker
+CheckGradientExhaustive	caffe/test/test_gradient_check_util.hpp	/^void GradientChecker<Dtype>::CheckGradientExhaustive(Layer<Dtype>* layer,$/;"	f	class:caffe::GradientChecker
+CheckGradientNet	caffe/test/test_gradient_check_util.hpp	/^void GradientChecker<Dtype>::CheckGradientNet($/;"	f	class:caffe::GradientChecker
+CheckGradientSingle	caffe/test/test_gradient_check_util.hpp	/^void GradientChecker<Dtype>::CheckGradientSingle(Layer<Dtype>* layer,$/;"	f	class:caffe::GradientChecker
+GetObjAndGradient	caffe/test/test_gradient_check_util.hpp	/^Dtype GradientChecker<Dtype>::GetObjAndGradient(const Layer<Dtype>& layer,$/;"	f	class:caffe::GradientChecker
+GradientChecker	caffe/test/test_gradient_check_util.hpp	/^  GradientChecker(const Dtype stepsize, const Dtype threshold,$/;"	f	class:caffe::GradientChecker
+GradientChecker	caffe/test/test_gradient_check_util.hpp	/^class GradientChecker {$/;"	c	namespace:caffe
+caffe	caffe/test/test_gradient_check_util.hpp	/^namespace caffe {$/;"	n
+kink_	caffe/test/test_gradient_check_util.hpp	/^  Dtype kink_;$/;"	m	class:caffe::GradientChecker
+kink_range_	caffe/test/test_gradient_check_util.hpp	/^  Dtype kink_range_;$/;"	m	class:caffe::GradientChecker
+seed_	caffe/test/test_gradient_check_util.hpp	/^  unsigned int seed_;$/;"	m	class:caffe::GradientChecker
+stepsize_	caffe/test/test_gradient_check_util.hpp	/^  Dtype stepsize_;$/;"	m	class:caffe::GradientChecker
+threshold_	caffe/test/test_gradient_check_util.hpp	/^  Dtype threshold_;$/;"	m	class:caffe::GradientChecker
+CAFFE_UTIL_BENCHMARK_H_	caffe/util/benchmark.hpp	2;"	d
+CPUTimer	caffe/util/benchmark.hpp	/^class CPUTimer : public Timer {$/;"	c	namespace:caffe
+Timer	caffe/util/benchmark.hpp	/^class Timer {$/;"	c	namespace:caffe
+caffe	caffe/util/benchmark.hpp	/^namespace caffe {$/;"	n
+elapsed_microseconds_	caffe/util/benchmark.hpp	/^  float elapsed_microseconds_;$/;"	m	class:caffe::Timer
+elapsed_milliseconds_	caffe/util/benchmark.hpp	/^  float elapsed_milliseconds_;$/;"	m	class:caffe::Timer
+has_run_at_least_once	caffe/util/benchmark.hpp	/^  inline bool has_run_at_least_once() { return has_run_at_least_once_; }$/;"	f	class:caffe::Timer
+has_run_at_least_once_	caffe/util/benchmark.hpp	/^  bool has_run_at_least_once_;$/;"	m	class:caffe::Timer
+initted	caffe/util/benchmark.hpp	/^  inline bool initted() { return initted_; }$/;"	f	class:caffe::Timer
+initted_	caffe/util/benchmark.hpp	/^  bool initted_;$/;"	m	class:caffe::Timer
+running	caffe/util/benchmark.hpp	/^  inline bool running() { return running_; }$/;"	f	class:caffe::Timer
+running_	caffe/util/benchmark.hpp	/^  bool running_;$/;"	m	class:caffe::Timer
+start_cpu_	caffe/util/benchmark.hpp	/^  boost::posix_time::ptime start_cpu_;$/;"	m	class:caffe::Timer
+start_gpu_	caffe/util/benchmark.hpp	/^  cudaEvent_t start_gpu_;$/;"	m	class:caffe::Timer
+stop_cpu_	caffe/util/benchmark.hpp	/^  boost::posix_time::ptime stop_cpu_;$/;"	m	class:caffe::Timer
+stop_gpu_	caffe/util/benchmark.hpp	/^  cudaEvent_t stop_gpu_;$/;"	m	class:caffe::Timer
+~CPUTimer	caffe/util/benchmark.hpp	/^  virtual ~CPUTimer() {}$/;"	f	class:caffe::CPUTimer
+BlockingQueue	caffe/util/blocking_queue.hpp	/^class BlockingQueue {$/;"	c	namespace:caffe
+CAFFE_UTIL_BLOCKING_QUEUE_HPP_	caffe/util/blocking_queue.hpp	2;"	d
+caffe	caffe/util/blocking_queue.hpp	/^namespace caffe {$/;"	n
+queue_	caffe/util/blocking_queue.hpp	/^  std::queue<T> queue_;$/;"	m	class:caffe::BlockingQueue
+sync_	caffe/util/blocking_queue.hpp	/^  shared_ptr<sync> sync_;$/;"	m	class:caffe::BlockingQueue
+CAFFE_UTIL_CUDNN_H_	caffe/util/cudnn.hpp	2;"	d
+CUDNN_CHECK	caffe/util/cudnn.hpp	10;"	d
+caffe	caffe/util/cudnn.hpp	/^namespace caffe {$/;"	n
+createConvolutionDesc	caffe/util/cudnn.hpp	/^inline void createConvolutionDesc(cudnnConvolutionDescriptor_t* conv) {$/;"	f	namespace:caffe::cudnn
+createFilterDesc	caffe/util/cudnn.hpp	/^inline void createFilterDesc(cudnnFilterDescriptor_t* desc,$/;"	f	namespace:caffe::cudnn
+createPoolingDesc	caffe/util/cudnn.hpp	/^inline void createPoolingDesc(cudnnPoolingDescriptor_t* pool_desc,$/;"	f	namespace:caffe::cudnn
+createTensor4dDesc	caffe/util/cudnn.hpp	/^inline void createTensor4dDesc(cudnnTensorDescriptor_t* desc) {$/;"	f	namespace:caffe::cudnn
+cudnn	caffe/util/cudnn.hpp	/^namespace cudnn {$/;"	n	namespace:caffe
+cudnnGetErrorString	caffe/util/cudnn.hpp	/^inline const char* cudnnGetErrorString(cudnnStatus_t status) {$/;"	f
+dataType	caffe/util/cudnn.hpp	/^template<> class dataType<double> {$/;"	c	namespace:caffe::cudnn
+dataType	caffe/util/cudnn.hpp	/^template<> class dataType<float>  {$/;"	c	namespace:caffe::cudnn
+one	caffe/util/cudnn.hpp	/^  static const void *one, *zero;$/;"	m	class:caffe::cudnn::dataType
+oneval	caffe/util/cudnn.hpp	/^  static double oneval, zeroval;$/;"	m	class:caffe::cudnn::dataType
+oneval	caffe/util/cudnn.hpp	/^  static float oneval, zeroval;$/;"	m	class:caffe::cudnn::dataType
+setConvolutionDesc	caffe/util/cudnn.hpp	/^inline void setConvolutionDesc(cudnnConvolutionDescriptor_t* conv,$/;"	f	namespace:caffe::cudnn
+setTensor4dDesc	caffe/util/cudnn.hpp	/^inline void setTensor4dDesc(cudnnTensorDescriptor_t* desc,$/;"	f	namespace:caffe::cudnn
+type	caffe/util/cudnn.hpp	/^  static const cudnnDataType_t type = CUDNN_DATA_DOUBLE;$/;"	m	class:caffe::cudnn::dataType
+type	caffe/util/cudnn.hpp	/^  static const cudnnDataType_t type = CUDNN_DATA_FLOAT;$/;"	m	class:caffe::cudnn::dataType
+zero	caffe/util/cudnn.hpp	/^  static const void *one, *zero;$/;"	m	class:caffe::cudnn::dataType
+zeroval	caffe/util/cudnn.hpp	/^  static double oneval, zeroval;$/;"	m	class:caffe::cudnn::dataType
+zeroval	caffe/util/cudnn.hpp	/^  static float oneval, zeroval;$/;"	m	class:caffe::cudnn::dataType
+CAFFE_UTIL_DB_HPP	caffe/util/db.hpp	2;"	d
+Cursor	caffe/util/db.hpp	/^  Cursor() { }$/;"	f	class:caffe::db::Cursor
+Cursor	caffe/util/db.hpp	/^class Cursor {$/;"	c	namespace:caffe::db
+DB	caffe/util/db.hpp	/^  DB() { }$/;"	f	class:caffe::db::DB
+DB	caffe/util/db.hpp	/^class DB {$/;"	c	namespace:caffe::db
+Mode	caffe/util/db.hpp	/^enum Mode { READ, WRITE, NEW };$/;"	g	namespace:caffe::db
+NEW	caffe/util/db.hpp	/^enum Mode { READ, WRITE, NEW };$/;"	e	enum:caffe::db::Mode
+READ	caffe/util/db.hpp	/^enum Mode { READ, WRITE, NEW };$/;"	e	enum:caffe::db::Mode
+Transaction	caffe/util/db.hpp	/^  Transaction() { }$/;"	f	class:caffe::db::Transaction
+Transaction	caffe/util/db.hpp	/^class Transaction {$/;"	c	namespace:caffe::db
+WRITE	caffe/util/db.hpp	/^enum Mode { READ, WRITE, NEW };$/;"	e	enum:caffe::db::Mode
+caffe	caffe/util/db.hpp	/^namespace caffe { namespace db {$/;"	n
+db	caffe/util/db.hpp	/^namespace caffe { namespace db {$/;"	n	namespace:caffe
+~Cursor	caffe/util/db.hpp	/^  virtual ~Cursor() { }$/;"	f	class:caffe::db::Cursor
+~DB	caffe/util/db.hpp	/^  virtual ~DB() { }$/;"	f	class:caffe::db::DB
+~Transaction	caffe/util/db.hpp	/^  virtual ~Transaction() { }$/;"	f	class:caffe::db::Transaction
+CAFFE_UTIL_DB_LEVELDB_HPP	caffe/util/db_leveldb.hpp	2;"	d
+Close	caffe/util/db_leveldb.hpp	/^  virtual void Close() {$/;"	f	class:caffe::db::LevelDB
+Commit	caffe/util/db_leveldb.hpp	/^  virtual void Commit() {$/;"	f	class:caffe::db::LevelDBTransaction
+LevelDB	caffe/util/db_leveldb.hpp	/^  LevelDB() : db_(NULL) { }$/;"	f	class:caffe::db::LevelDB
+LevelDB	caffe/util/db_leveldb.hpp	/^class LevelDB : public DB {$/;"	c	namespace:caffe::db
+LevelDBCursor	caffe/util/db_leveldb.hpp	/^  explicit LevelDBCursor(leveldb::Iterator* iter)$/;"	f	class:caffe::db::LevelDBCursor
+LevelDBCursor	caffe/util/db_leveldb.hpp	/^class LevelDBCursor : public Cursor {$/;"	c	namespace:caffe::db
+LevelDBTransaction	caffe/util/db_leveldb.hpp	/^  explicit LevelDBTransaction(leveldb::DB* db) : db_(db) { CHECK_NOTNULL(db_); }$/;"	f	class:caffe::db::LevelDBTransaction
+LevelDBTransaction	caffe/util/db_leveldb.hpp	/^class LevelDBTransaction : public Transaction {$/;"	c	namespace:caffe::db
+NewCursor	caffe/util/db_leveldb.hpp	/^  virtual LevelDBCursor* NewCursor() {$/;"	f	class:caffe::db::LevelDB
+NewTransaction	caffe/util/db_leveldb.hpp	/^  virtual LevelDBTransaction* NewTransaction() {$/;"	f	class:caffe::db::LevelDB
+Next	caffe/util/db_leveldb.hpp	/^  virtual void Next() { iter_->Next(); }$/;"	f	class:caffe::db::LevelDBCursor
+Put	caffe/util/db_leveldb.hpp	/^  virtual void Put(const string& key, const string& value) {$/;"	f	class:caffe::db::LevelDBTransaction
+SeekToFirst	caffe/util/db_leveldb.hpp	/^  virtual void SeekToFirst() { iter_->SeekToFirst(); }$/;"	f	class:caffe::db::LevelDBCursor
+batch_	caffe/util/db_leveldb.hpp	/^  leveldb::WriteBatch batch_;$/;"	m	class:caffe::db::LevelDBTransaction
+caffe	caffe/util/db_leveldb.hpp	/^namespace caffe { namespace db {$/;"	n
+db	caffe/util/db_leveldb.hpp	/^namespace caffe { namespace db {$/;"	n	namespace:caffe
+db_	caffe/util/db_leveldb.hpp	/^  leveldb::DB* db_;$/;"	m	class:caffe::db::LevelDB
+db_	caffe/util/db_leveldb.hpp	/^  leveldb::DB* db_;$/;"	m	class:caffe::db::LevelDBTransaction
+iter_	caffe/util/db_leveldb.hpp	/^  leveldb::Iterator* iter_;$/;"	m	class:caffe::db::LevelDBCursor
+key	caffe/util/db_leveldb.hpp	/^  virtual string key() { return iter_->key().ToString(); }$/;"	f	class:caffe::db::LevelDBCursor
+valid	caffe/util/db_leveldb.hpp	/^  virtual bool valid() { return iter_->Valid(); }$/;"	f	class:caffe::db::LevelDBCursor
+value	caffe/util/db_leveldb.hpp	/^  virtual string value() { return iter_->value().ToString(); }$/;"	f	class:caffe::db::LevelDBCursor
+~LevelDB	caffe/util/db_leveldb.hpp	/^  virtual ~LevelDB() { Close(); }$/;"	f	class:caffe::db::LevelDB
+~LevelDBCursor	caffe/util/db_leveldb.hpp	/^  ~LevelDBCursor() { delete iter_; }$/;"	f	class:caffe::db::LevelDBCursor
+CAFFE_UTIL_DB_LMDB_HPP	caffe/util/db_lmdb.hpp	2;"	d
+Close	caffe/util/db_lmdb.hpp	/^  virtual void Close() {$/;"	f	class:caffe::db::LMDB
+Commit	caffe/util/db_lmdb.hpp	/^  virtual void Commit() { MDB_CHECK(mdb_txn_commit(mdb_txn_)); }$/;"	f	class:caffe::db::LMDBTransaction
+LMDB	caffe/util/db_lmdb.hpp	/^  LMDB() : mdb_env_(NULL) { }$/;"	f	class:caffe::db::LMDB
+LMDB	caffe/util/db_lmdb.hpp	/^class LMDB : public DB {$/;"	c	namespace:caffe::db
+LMDBCursor	caffe/util/db_lmdb.hpp	/^  explicit LMDBCursor(MDB_txn* mdb_txn, MDB_cursor* mdb_cursor)$/;"	f	class:caffe::db::LMDBCursor
+LMDBCursor	caffe/util/db_lmdb.hpp	/^class LMDBCursor : public Cursor {$/;"	c	namespace:caffe::db
+LMDBTransaction	caffe/util/db_lmdb.hpp	/^  explicit LMDBTransaction(MDB_dbi* mdb_dbi, MDB_txn* mdb_txn)$/;"	f	class:caffe::db::LMDBTransaction
+LMDBTransaction	caffe/util/db_lmdb.hpp	/^class LMDBTransaction : public Transaction {$/;"	c	namespace:caffe::db
+MDB_CHECK	caffe/util/db_lmdb.hpp	/^inline void MDB_CHECK(int mdb_status) {$/;"	f	namespace:caffe::db
+Next	caffe/util/db_lmdb.hpp	/^  virtual void Next() { Seek(MDB_NEXT); }$/;"	f	class:caffe::db::LMDBCursor
+Seek	caffe/util/db_lmdb.hpp	/^  void Seek(MDB_cursor_op op) {$/;"	f	class:caffe::db::LMDBCursor
+SeekToFirst	caffe/util/db_lmdb.hpp	/^  virtual void SeekToFirst() { Seek(MDB_FIRST); }$/;"	f	class:caffe::db::LMDBCursor
+caffe	caffe/util/db_lmdb.hpp	/^namespace caffe { namespace db {$/;"	n
+db	caffe/util/db_lmdb.hpp	/^namespace caffe { namespace db {$/;"	n	namespace:caffe
+key	caffe/util/db_lmdb.hpp	/^  virtual string key() {$/;"	f	class:caffe::db::LMDBCursor
+mdb_cursor_	caffe/util/db_lmdb.hpp	/^  MDB_cursor* mdb_cursor_;$/;"	m	class:caffe::db::LMDBCursor
+mdb_dbi_	caffe/util/db_lmdb.hpp	/^  MDB_dbi mdb_dbi_;$/;"	m	class:caffe::db::LMDB
+mdb_dbi_	caffe/util/db_lmdb.hpp	/^  MDB_dbi* mdb_dbi_;$/;"	m	class:caffe::db::LMDBTransaction
+mdb_env_	caffe/util/db_lmdb.hpp	/^  MDB_env* mdb_env_;$/;"	m	class:caffe::db::LMDB
+mdb_key_	caffe/util/db_lmdb.hpp	/^  MDB_val mdb_key_, mdb_value_;$/;"	m	class:caffe::db::LMDBCursor
+mdb_txn_	caffe/util/db_lmdb.hpp	/^  MDB_txn* mdb_txn_;$/;"	m	class:caffe::db::LMDBCursor
+mdb_txn_	caffe/util/db_lmdb.hpp	/^  MDB_txn* mdb_txn_;$/;"	m	class:caffe::db::LMDBTransaction
+mdb_value_	caffe/util/db_lmdb.hpp	/^  MDB_val mdb_key_, mdb_value_;$/;"	m	class:caffe::db::LMDBCursor
+valid	caffe/util/db_lmdb.hpp	/^  virtual bool valid() { return valid_; }$/;"	f	class:caffe::db::LMDBCursor
+valid_	caffe/util/db_lmdb.hpp	/^  bool valid_;$/;"	m	class:caffe::db::LMDBCursor
+value	caffe/util/db_lmdb.hpp	/^  virtual string value() {$/;"	f	class:caffe::db::LMDBCursor
+~LMDB	caffe/util/db_lmdb.hpp	/^  virtual ~LMDB() { Close(); }$/;"	f	class:caffe::db::LMDB
+~LMDBCursor	caffe/util/db_lmdb.hpp	/^  virtual ~LMDBCursor() {$/;"	f	class:caffe::db::LMDBCursor
+CAFFE_CUDA_NUM_THREADS	caffe/util/device_alternate.hpp	/^    const int CAFFE_CUDA_NUM_THREADS = 1024;$/;"	m	namespace:caffe
+CAFFE_CUDA_NUM_THREADS	caffe/util/device_alternate.hpp	/^    const int CAFFE_CUDA_NUM_THREADS = 512;$/;"	m	namespace:caffe
+CAFFE_GET_BLOCKS	caffe/util/device_alternate.hpp	/^inline int CAFFE_GET_BLOCKS(const int N) {$/;"	f	namespace:caffe
+CAFFE_UTIL_DEVICE_ALTERNATE_H_	caffe/util/device_alternate.hpp	2;"	d
+CUBLAS_CHECK	caffe/util/device_alternate.hpp	55;"	d
+CUDA_CHECK	caffe/util/device_alternate.hpp	48;"	d
+CUDA_KERNEL_LOOP	caffe/util/device_alternate.hpp	70;"	d
+CUDA_POST_KERNEL_CHECK	caffe/util/device_alternate.hpp	76;"	d
+CURAND_CHECK	caffe/util/device_alternate.hpp	62;"	d
+NO_GPU	caffe/util/device_alternate.hpp	10;"	d
+STUB_GPU	caffe/util/device_alternate.hpp	12;"	d
+STUB_GPU_BACKWARD	caffe/util/device_alternate.hpp	26;"	d
+STUB_GPU_FORWARD	caffe/util/device_alternate.hpp	21;"	d
+caffe	caffe/util/device_alternate.hpp	/^namespace caffe {$/;"	n
+CAFFE_UTIL_HDF5_H_	caffe/util/hdf5.hpp	2;"	d
+caffe	caffe/util/hdf5.hpp	/^namespace caffe {$/;"	n
+_CAFFE_UTIL_IM2COL_HPP_	caffe/util/im2col.hpp	2;"	d
+caffe	caffe/util/im2col.hpp	/^namespace caffe {$/;"	n
+_CAFFE_UTIL_INSERT_SPLITS_HPP_	caffe/util/insert_splits.hpp	2;"	d
+caffe	caffe/util/insert_splits.hpp	/^namespace caffe {$/;"	n
+CAFFE_UTIL_IO_H_	caffe/util/io.hpp	2;"	d
+MakeTempDir	caffe/util/io.hpp	/^inline void MakeTempDir(string* temp_dirname) {$/;"	f	namespace:caffe
+MakeTempFilename	caffe/util/io.hpp	/^inline void MakeTempFilename(string* temp_filename) {$/;"	f	namespace:caffe
+ReadFileToDatum	caffe/util/io.hpp	/^inline bool ReadFileToDatum(const string& filename, Datum* datum) {$/;"	f	namespace:caffe
+ReadImageToDatum	caffe/util/io.hpp	/^inline bool ReadImageToDatum(const string& filename, const int label,$/;"	f	namespace:caffe
+ReadProtoFromBinaryFile	caffe/util/io.hpp	/^inline bool ReadProtoFromBinaryFile(const string& filename, Message* proto) {$/;"	f	namespace:caffe
+ReadProtoFromBinaryFileOrDie	caffe/util/io.hpp	/^inline void ReadProtoFromBinaryFileOrDie(const char* filename, Message* proto) {$/;"	f	namespace:caffe
+ReadProtoFromBinaryFileOrDie	caffe/util/io.hpp	/^inline void ReadProtoFromBinaryFileOrDie(const string& filename,$/;"	f	namespace:caffe
+ReadProtoFromTextFile	caffe/util/io.hpp	/^inline bool ReadProtoFromTextFile(const string& filename, Message* proto) {$/;"	f	namespace:caffe
+ReadProtoFromTextFileOrDie	caffe/util/io.hpp	/^inline void ReadProtoFromTextFileOrDie(const char* filename, Message* proto) {$/;"	f	namespace:caffe
+ReadProtoFromTextFileOrDie	caffe/util/io.hpp	/^inline void ReadProtoFromTextFileOrDie(const string& filename, Message* proto) {$/;"	f	namespace:caffe
+WriteProtoToBinaryFile	caffe/util/io.hpp	/^inline void WriteProtoToBinaryFile($/;"	f	namespace:caffe
+WriteProtoToTextFile	caffe/util/io.hpp	/^inline void WriteProtoToTextFile(const Message& proto, const string& filename) {$/;"	f	namespace:caffe
+caffe	caffe/util/io.hpp	/^namespace caffe {$/;"	n
+CAFFE_UTIL_MATH_FUNCTIONS_H_	caffe/util/math_functions.hpp	2;"	d
+DEFINE_AND_INSTANTIATE_GPU_UNARY_FUNC	caffe/util/math_functions.hpp	256;"	d
+DEFINE_CAFFE_CPU_UNARY_FUNC	caffe/util/math_functions.hpp	124;"	d
+caffe	caffe/util/math_functions.hpp	/^namespace caffe {$/;"	n
+caffe_gpu_memset	caffe/util/math_functions.hpp	/^inline void caffe_gpu_memset(const size_t N, const int alpha, void* X) {$/;"	f	namespace:caffe
+caffe_memset	caffe/util/math_functions.hpp	/^inline void caffe_memset(const size_t N, const int alpha, void* X) {$/;"	f	namespace:caffe
+caffe_sign	caffe/util/math_functions.hpp	/^inline int8_t caffe_sign(Dtype val) {$/;"	f	namespace:caffe
+CAFFE_UTIL_MKL_ALTERNATE_H_	caffe/util/mkl_alternate.hpp	2;"	d
+DEFINE_VSL_BINARY_FUNC	caffe/util/mkl_alternate.hpp	60;"	d
+DEFINE_VSL_UNARY_FUNC	caffe/util/mkl_alternate.hpp	19;"	d
+DEFINE_VSL_UNARY_FUNC_WITH_PARAM	caffe/util/mkl_alternate.hpp	41;"	d
+cblas_daxpby	caffe/util/mkl_alternate.hpp	/^inline void cblas_daxpby(const int N, const double alpha, const double* X,$/;"	f
+cblas_saxpby	caffe/util/mkl_alternate.hpp	/^inline void cblas_saxpby(const int N, const float alpha, const float* X,$/;"	f
+CAFFE_RNG_CPP_HPP_	caffe/util/rng.hpp	2;"	d
+caffe	caffe/util/rng.hpp	/^namespace caffe {$/;"	n
+caffe_rng	caffe/util/rng.hpp	/^inline rng_t* caffe_rng() {$/;"	f	namespace:caffe
+rng_t	caffe/util/rng.hpp	/^typedef boost::mt19937 rng_t;$/;"	t	namespace:caffe
+shuffle	caffe/util/rng.hpp	/^inline void shuffle(RandomAccessIterator begin, RandomAccessIterator end) {$/;"	f	namespace:caffe
+shuffle	caffe/util/rng.hpp	/^inline void shuffle(RandomAccessIterator begin, RandomAccessIterator end,$/;"	f	namespace:caffe
+INCLUDE_CAFFE_UTIL_SIGNAL_HANDLER_H_	caffe/util/signal_handler.h	2;"	d
+SIGHUP_action_	caffe/util/signal_handler.h	/^  SolverAction::Enum SIGHUP_action_;$/;"	m	class:caffe::SignalHandler
+SIGINT_action_	caffe/util/signal_handler.h	/^  SolverAction::Enum SIGINT_action_;$/;"	m	class:caffe::SignalHandler
+SignalHandler	caffe/util/signal_handler.h	/^class SignalHandler {$/;"	c	namespace:caffe
+caffe	caffe/util/signal_handler.h	/^namespace caffe {$/;"	n
+CAFFE_UTIL_UPGRADE_PROTO_H_	caffe/util/upgrade_proto.hpp	2;"	d
+caffe	caffe/util/upgrade_proto.hpp	/^namespace caffe {$/;"	n
+BaseConvolutionLayer	caffe/vision_layers.hpp	/^  explicit BaseConvolutionLayer(const LayerParameter& param)$/;"	f	class:caffe::BaseConvolutionLayer
+BaseConvolutionLayer	caffe/vision_layers.hpp	/^class BaseConvolutionLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+CAFFE_VISION_LAYERS_HPP_	caffe/vision_layers.hpp	2;"	d
+ConvolutionLayer	caffe/vision_layers.hpp	/^  explicit ConvolutionLayer(const LayerParameter& param)$/;"	f	class:caffe::ConvolutionLayer
+ConvolutionLayer	caffe/vision_layers.hpp	/^class ConvolutionLayer : public BaseConvolutionLayer<Dtype> {$/;"	c	namespace:caffe
+CuDNNConvolutionLayer	caffe/vision_layers.hpp	/^  explicit CuDNNConvolutionLayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNConvolutionLayer
+CuDNNConvolutionLayer	caffe/vision_layers.hpp	/^class CuDNNConvolutionLayer : public ConvolutionLayer<Dtype> {$/;"	c	namespace:caffe
+CuDNNPoolingLayer	caffe/vision_layers.hpp	/^  explicit CuDNNPoolingLayer(const LayerParameter& param)$/;"	f	class:caffe::CuDNNPoolingLayer
+CuDNNPoolingLayer	caffe/vision_layers.hpp	/^class CuDNNPoolingLayer : public PoolingLayer<Dtype> {$/;"	c	namespace:caffe
+DeconvolutionLayer	caffe/vision_layers.hpp	/^  explicit DeconvolutionLayer(const LayerParameter& param)$/;"	f	class:caffe::DeconvolutionLayer
+DeconvolutionLayer	caffe/vision_layers.hpp	/^class DeconvolutionLayer : public BaseConvolutionLayer<Dtype> {$/;"	c	namespace:caffe
+EqualNumBottomTopBlobs	caffe/vision_layers.hpp	/^  virtual inline bool EqualNumBottomTopBlobs() const { return true; }$/;"	f	class:caffe::BaseConvolutionLayer
+ExactNumBottomBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::Im2colLayer
+ExactNumBottomBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::LRNLayer
+ExactNumBottomBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::PoolingLayer
+ExactNumBottomBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumBottomBlobs() const { return 1; }$/;"	f	class:caffe::SPPLayer
+ExactNumTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::CuDNNPoolingLayer
+ExactNumTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::Im2colLayer
+ExactNumTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::LRNLayer
+ExactNumTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int ExactNumTopBlobs() const { return 1; }$/;"	f	class:caffe::SPPLayer
+Im2colLayer	caffe/vision_layers.hpp	/^  explicit Im2colLayer(const LayerParameter& param)$/;"	f	class:caffe::Im2colLayer
+Im2colLayer	caffe/vision_layers.hpp	/^class Im2colLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+LRNLayer	caffe/vision_layers.hpp	/^  explicit LRNLayer(const LayerParameter& param)$/;"	f	class:caffe::LRNLayer
+LRNLayer	caffe/vision_layers.hpp	/^class LRNLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+MaxTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int MaxTopBlobs() const {$/;"	f	class:caffe::PoolingLayer
+MinBottomBlobs	caffe/vision_layers.hpp	/^  virtual inline int MinBottomBlobs() const { return 1; }$/;"	f	class:caffe::BaseConvolutionLayer
+MinTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int MinTopBlobs() const { return -1; }$/;"	f	class:caffe::CuDNNPoolingLayer
+MinTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::BaseConvolutionLayer
+MinTopBlobs	caffe/vision_layers.hpp	/^  virtual inline int MinTopBlobs() const { return 1; }$/;"	f	class:caffe::PoolingLayer
+PoolingLayer	caffe/vision_layers.hpp	/^  explicit PoolingLayer(const LayerParameter& param)$/;"	f	class:caffe::PoolingLayer
+PoolingLayer	caffe/vision_layers.hpp	/^class PoolingLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+SPPLayer	caffe/vision_layers.hpp	/^  explicit SPPLayer(const LayerParameter& param)$/;"	f	class:caffe::SPPLayer
+SPPLayer	caffe/vision_layers.hpp	/^class SPPLayer : public Layer<Dtype> {$/;"	c	namespace:caffe
+alpha_	caffe/vision_layers.hpp	/^  Dtype alpha_;$/;"	m	class:caffe::LRNLayer
+beta_	caffe/vision_layers.hpp	/^  Dtype beta_;$/;"	m	class:caffe::LRNLayer
+bias_desc_	caffe/vision_layers.hpp	/^  cudnnTensorDescriptor_t    bias_desc_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+bias_multiplier_	caffe/vision_layers.hpp	/^  Blob<Dtype> bias_multiplier_;$/;"	m	class:caffe::BaseConvolutionLayer
+bias_offset_	caffe/vision_layers.hpp	/^  int bottom_offset_, top_offset_, weight_offset_, bias_offset_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+bias_term_	caffe/vision_layers.hpp	/^  bool bias_term_;$/;"	m	class:caffe::BaseConvolutionLayer
+bottom_desc_	caffe/vision_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_, top_desc_;$/;"	m	class:caffe::CuDNNPoolingLayer
+bottom_descs_	caffe/vision_layers.hpp	/^  vector<cudnnTensorDescriptor_t> bottom_descs_, top_descs_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+bottom_h_	caffe/vision_layers.hpp	/^  int bottom_h_, bottom_w_;$/;"	m	class:caffe::SPPLayer
+bottom_offset_	caffe/vision_layers.hpp	/^  int bottom_offset_, top_offset_, weight_offset_, bias_offset_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+bottom_w_	caffe/vision_layers.hpp	/^  int bottom_h_, bottom_w_;$/;"	m	class:caffe::SPPLayer
+caffe	caffe/vision_layers.hpp	/^namespace caffe {$/;"	n
+channels_	caffe/vision_layers.hpp	/^  int channels_;$/;"	m	class:caffe::BaseConvolutionLayer
+channels_	caffe/vision_layers.hpp	/^  int channels_;$/;"	m	class:caffe::Im2colLayer
+channels_	caffe/vision_layers.hpp	/^  int channels_;$/;"	m	class:caffe::LRNLayer
+channels_	caffe/vision_layers.hpp	/^  int channels_;$/;"	m	class:caffe::PoolingLayer
+channels_	caffe/vision_layers.hpp	/^  int channels_;$/;"	m	class:caffe::SPPLayer
+col_buffer_	caffe/vision_layers.hpp	/^  Blob<Dtype> col_buffer_;$/;"	m	class:caffe::BaseConvolutionLayer
+col_offset_	caffe/vision_layers.hpp	/^  int col_offset_;$/;"	m	class:caffe::BaseConvolutionLayer
+concat_bottom_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> concat_bottom_vec_;$/;"	m	class:caffe::SPPLayer
+concat_layer_	caffe/vision_layers.hpp	/^  shared_ptr<ConcatLayer<Dtype> > concat_layer_;$/;"	m	class:caffe::SPPLayer
+conv_col2im_cpu	caffe/vision_layers.hpp	/^  inline void conv_col2im_cpu(const Dtype* col_buff, Dtype* data) {$/;"	f	class:caffe::BaseConvolutionLayer
+conv_col2im_gpu	caffe/vision_layers.hpp	/^  inline void conv_col2im_gpu(const Dtype* col_buff, Dtype* data) {$/;"	f	class:caffe::BaseConvolutionLayer
+conv_descs_	caffe/vision_layers.hpp	/^  vector<cudnnConvolutionDescriptor_t> conv_descs_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+conv_im2col_cpu	caffe/vision_layers.hpp	/^  inline void conv_im2col_cpu(const Dtype* data, Dtype* col_buff) {$/;"	f	class:caffe::BaseConvolutionLayer
+conv_im2col_gpu	caffe/vision_layers.hpp	/^  inline void conv_im2col_gpu(const Dtype* data, Dtype* col_buff) {$/;"	f	class:caffe::BaseConvolutionLayer
+conv_in_channels_	caffe/vision_layers.hpp	/^  int conv_in_channels_;$/;"	m	class:caffe::BaseConvolutionLayer
+conv_in_height_	caffe/vision_layers.hpp	/^  int conv_in_height_;$/;"	m	class:caffe::BaseConvolutionLayer
+conv_in_width_	caffe/vision_layers.hpp	/^  int conv_in_width_;$/;"	m	class:caffe::BaseConvolutionLayer
+conv_out_channels_	caffe/vision_layers.hpp	/^  int conv_out_channels_;$/;"	m	class:caffe::BaseConvolutionLayer
+conv_out_spatial_dim_	caffe/vision_layers.hpp	/^  int conv_out_spatial_dim_;$/;"	m	class:caffe::BaseConvolutionLayer
+filter_desc_	caffe/vision_layers.hpp	/^  cudnnFilterDescriptor_t      filter_desc_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+flatten_layers_	caffe/vision_layers.hpp	/^  vector<FlattenLayer<Dtype>*> flatten_layers_;$/;"	m	class:caffe::SPPLayer
+flatten_outputs_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> flatten_outputs_;$/;"	m	class:caffe::SPPLayer
+flatten_top_vecs_	caffe/vision_layers.hpp	/^  vector<vector<Blob<Dtype>*>*> flatten_top_vecs_;$/;"	m	class:caffe::SPPLayer
+global_pooling_	caffe/vision_layers.hpp	/^  bool global_pooling_;$/;"	m	class:caffe::PoolingLayer
+group_	caffe/vision_layers.hpp	/^  int group_;$/;"	m	class:caffe::BaseConvolutionLayer
+handle_	caffe/vision_layers.hpp	/^  cudnnHandle_t             handle_;$/;"	m	class:caffe::CuDNNPoolingLayer
+handle_	caffe/vision_layers.hpp	/^  cudnnHandle_t* handle_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+handles_setup_	caffe/vision_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+handles_setup_	caffe/vision_layers.hpp	/^  bool handles_setup_;$/;"	m	class:caffe::CuDNNPoolingLayer
+height_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::BaseConvolutionLayer
+height_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::Im2colLayer
+height_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::PoolingLayer
+height_	caffe/vision_layers.hpp	/^  int height_;$/;"	m	class:caffe::LRNLayer
+height_out_	caffe/vision_layers.hpp	/^  int height_out_, width_out_;$/;"	m	class:caffe::BaseConvolutionLayer
+is_1x1_	caffe/vision_layers.hpp	/^  bool is_1x1_;$/;"	m	class:caffe::BaseConvolutionLayer
+k_	caffe/vision_layers.hpp	/^  Dtype k_;$/;"	m	class:caffe::LRNLayer
+kernel_dim_	caffe/vision_layers.hpp	/^  int kernel_dim_;$/;"	m	class:caffe::BaseConvolutionLayer
+kernel_h_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+kernel_h_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::Im2colLayer
+kernel_h_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::PoolingLayer
+kernel_h_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::SPPLayer
+kernel_w_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+kernel_w_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::Im2colLayer
+kernel_w_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::PoolingLayer
+kernel_w_	caffe/vision_layers.hpp	/^  int kernel_h_, kernel_w_;$/;"	m	class:caffe::SPPLayer
+max_idx_	caffe/vision_layers.hpp	/^  Blob<int> max_idx_;$/;"	m	class:caffe::PoolingLayer
+mode_	caffe/vision_layers.hpp	/^  cudnnPoolingMode_t        mode_;$/;"	m	class:caffe::CuDNNPoolingLayer
+num_	caffe/vision_layers.hpp	/^  int num_;$/;"	m	class:caffe::BaseConvolutionLayer
+num_	caffe/vision_layers.hpp	/^  int num_;$/;"	m	class:caffe::LRNLayer
+num_	caffe/vision_layers.hpp	/^  int num_;$/;"	m	class:caffe::SPPLayer
+num_output_	caffe/vision_layers.hpp	/^  int num_output_;$/;"	m	class:caffe::BaseConvolutionLayer
+output_offset_	caffe/vision_layers.hpp	/^  int output_offset_;$/;"	m	class:caffe::BaseConvolutionLayer
+pad_h_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+pad_h_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::Im2colLayer
+pad_h_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::PoolingLayer
+pad_h_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::SPPLayer
+pad_w_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+pad_w_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::Im2colLayer
+pad_w_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::PoolingLayer
+pad_w_	caffe/vision_layers.hpp	/^  int pad_h_, pad_w_;$/;"	m	class:caffe::SPPLayer
+pool_layer_	caffe/vision_layers.hpp	/^  shared_ptr<PoolingLayer<Dtype> > pool_layer_;$/;"	m	class:caffe::LRNLayer
+pool_output_	caffe/vision_layers.hpp	/^  Blob<Dtype> pool_output_;$/;"	m	class:caffe::LRNLayer
+pool_top_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> pool_top_vec_;$/;"	m	class:caffe::LRNLayer
+pooled_height_	caffe/vision_layers.hpp	/^  int pooled_height_, pooled_width_;$/;"	m	class:caffe::PoolingLayer
+pooled_width_	caffe/vision_layers.hpp	/^  int pooled_height_, pooled_width_;$/;"	m	class:caffe::PoolingLayer
+pooling_bottom_vecs_	caffe/vision_layers.hpp	/^  vector<vector<Blob<Dtype>*>*> pooling_bottom_vecs_;$/;"	m	class:caffe::SPPLayer
+pooling_desc_	caffe/vision_layers.hpp	/^  cudnnPoolingDescriptor_t  pooling_desc_;$/;"	m	class:caffe::CuDNNPoolingLayer
+pooling_layers_	caffe/vision_layers.hpp	/^  vector<shared_ptr<PoolingLayer<Dtype> > > pooling_layers_;$/;"	m	class:caffe::SPPLayer
+pooling_outputs_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> pooling_outputs_;$/;"	m	class:caffe::SPPLayer
+pooling_top_vecs_	caffe/vision_layers.hpp	/^  vector<vector<Blob<Dtype>*>*> pooling_top_vecs_;$/;"	m	class:caffe::SPPLayer
+power_layer_	caffe/vision_layers.hpp	/^  shared_ptr<PowerLayer<Dtype> > power_layer_;$/;"	m	class:caffe::LRNLayer
+power_output_	caffe/vision_layers.hpp	/^  Blob<Dtype> power_output_;$/;"	m	class:caffe::LRNLayer
+power_top_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> power_top_vec_;$/;"	m	class:caffe::LRNLayer
+pre_pad_	caffe/vision_layers.hpp	/^  int pre_pad_;$/;"	m	class:caffe::LRNLayer
+product_bottom_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> product_bottom_vec_;$/;"	m	class:caffe::LRNLayer
+product_input_	caffe/vision_layers.hpp	/^  Blob<Dtype> product_input_;$/;"	m	class:caffe::LRNLayer
+product_layer_	caffe/vision_layers.hpp	/^  shared_ptr<EltwiseLayer<Dtype> > product_layer_;$/;"	m	class:caffe::LRNLayer
+pyramid_height_	caffe/vision_layers.hpp	/^  int pyramid_height_;$/;"	m	class:caffe::SPPLayer
+rand_idx_	caffe/vision_layers.hpp	/^  Blob<Dtype> rand_idx_;$/;"	m	class:caffe::PoolingLayer
+reshaped_first_time_	caffe/vision_layers.hpp	/^  bool reshaped_first_time_;$/;"	m	class:caffe::SPPLayer
+reverse_dimensions	caffe/vision_layers.hpp	/^  virtual inline bool reverse_dimensions() { return false; }$/;"	f	class:caffe::ConvolutionLayer
+reverse_dimensions	caffe/vision_layers.hpp	/^  virtual inline bool reverse_dimensions() { return true; }$/;"	f	class:caffe::DeconvolutionLayer
+scale_	caffe/vision_layers.hpp	/^  Blob<Dtype> scale_;$/;"	m	class:caffe::LRNLayer
+size_	caffe/vision_layers.hpp	/^  int size_;$/;"	m	class:caffe::LRNLayer
+split_layer_	caffe/vision_layers.hpp	/^  shared_ptr<SplitLayer<Dtype> > split_layer_;$/;"	m	class:caffe::LRNLayer
+split_layer_	caffe/vision_layers.hpp	/^  shared_ptr<SplitLayer<Dtype> > split_layer_;$/;"	m	class:caffe::SPPLayer
+split_top_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> split_top_vec_;$/;"	m	class:caffe::LRNLayer
+split_top_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> split_top_vec_;$/;"	m	class:caffe::SPPLayer
+square_bottom_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> square_bottom_vec_;$/;"	m	class:caffe::LRNLayer
+square_input_	caffe/vision_layers.hpp	/^  Blob<Dtype> square_input_;$/;"	m	class:caffe::LRNLayer
+square_layer_	caffe/vision_layers.hpp	/^  shared_ptr<PowerLayer<Dtype> > square_layer_;$/;"	m	class:caffe::LRNLayer
+square_output_	caffe/vision_layers.hpp	/^  Blob<Dtype> square_output_;$/;"	m	class:caffe::LRNLayer
+square_top_vec_	caffe/vision_layers.hpp	/^  vector<Blob<Dtype>*> square_top_vec_;$/;"	m	class:caffe::LRNLayer
+stream_	caffe/vision_layers.hpp	/^  cudaStream_t*  stream_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+stride_h_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+stride_h_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::Im2colLayer
+stride_h_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::PoolingLayer
+stride_w_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::BaseConvolutionLayer
+stride_w_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::Im2colLayer
+stride_w_	caffe/vision_layers.hpp	/^  int stride_h_, stride_w_;$/;"	m	class:caffe::PoolingLayer
+top_desc_	caffe/vision_layers.hpp	/^  cudnnTensorDescriptor_t bottom_desc_, top_desc_;$/;"	m	class:caffe::CuDNNPoolingLayer
+top_descs_	caffe/vision_layers.hpp	/^  vector<cudnnTensorDescriptor_t> bottom_descs_, top_descs_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+top_offset_	caffe/vision_layers.hpp	/^  int bottom_offset_, top_offset_, weight_offset_, bias_offset_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "Convolution"; }$/;"	f	class:caffe::ConvolutionLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "Deconvolution"; }$/;"	f	class:caffe::DeconvolutionLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "Im2col"; }$/;"	f	class:caffe::Im2colLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "LRN"; }$/;"	f	class:caffe::LRNLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "Pooling"; }$/;"	f	class:caffe::PoolingLayer
+type	caffe/vision_layers.hpp	/^  virtual inline const char* type() const { return "SPP"; }$/;"	f	class:caffe::SPPLayer
+weight_offset_	caffe/vision_layers.hpp	/^  int bottom_offset_, top_offset_, weight_offset_, bias_offset_;$/;"	m	class:caffe::CuDNNConvolutionLayer
+weight_offset_	caffe/vision_layers.hpp	/^  int weight_offset_;$/;"	m	class:caffe::BaseConvolutionLayer
+width_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::BaseConvolutionLayer
+width_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::Im2colLayer
+width_	caffe/vision_layers.hpp	/^  int height_, width_;$/;"	m	class:caffe::PoolingLayer
+width_	caffe/vision_layers.hpp	/^  int width_;$/;"	m	class:caffe::LRNLayer
+width_out_	caffe/vision_layers.hpp	/^  int height_out_, width_out_;$/;"	m	class:caffe::BaseConvolutionLayer
+workspace	caffe/vision_layers.hpp	/^  void *workspace;$/;"	m	class:caffe::CuDNNConvolutionLayer
+workspaceSizeInBytes	caffe/vision_layers.hpp	/^  size_t workspaceSizeInBytes;$/;"	m	class:caffe::CuDNNConvolutionLayer
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
