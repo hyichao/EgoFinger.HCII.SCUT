@@ -8,7 +8,7 @@ SCUT-Ego-Finger Dataset is for research on egocentric vision hand detection and 
 
 The dataset is collected for solving problem of ego-vision fingertip detection and hand detection, which may conduct challenges such as background complexity, Illumination change, hand shape and hand color diversity, motion blur, so on and forth. Therefore the dataset deliberately covers different type of frames. It is feasible to applied Deep Learning on the dataset. For further evaluation of the dataset, please visit use a tool in this repo named Performer, or contact hyichao@foxmail.com
 
-In the repo there are three folders. The one named Collector is the tool for data labeling, executed on Windows in convienience, which is written by Qt framework with OpenCV. The one named Performer is for data evaluation, simply like spacial distribution of hand, color distribution and so on. The Application folder contains personal used demo codes (FYI, the demo video is uploaded to [Youtube]<https://www.youtube.com/watch?v=PeSrRxKghv8>, please click the link or search **Egocentric Air Writing** in Youtube), and due to some stupid policy I have to keep the models myself and therefore the Application codes cannot run directly until caffemodels are filled.
+In the repo there are three folders. The one named Collector is the tool for data labeling, executed on Windows in convienience, which is written by Qt framework with OpenCV. The one named Performer is for data evaluation, simply like spacial distribution of hand, color distribution and so on. The Application folder contains personal used demo codes (FYI, the demo video is uploaded to [Youtube](https://www.youtube.com/watch?v=PeSrRxKghv8), please click the link or search **Egocentric Air Writing** in Youtube), and due to some stupid policy I have to keep the models myself and therefore the Application codes cannot run directly until caffemodels are filled.
 
 ### Install
 In this repo we build the UI mainly by Qt environment and OpenCV library. So,
@@ -21,7 +21,7 @@ sudo apt-get install libopencv-dev python-opencv
 ```
 
 2. Install Qt
-Go to [Qt download page]<https://www.qt.io/download/> and download the **.run** file the follow the instruction
+Go to [Qt download page](https://www.qt.io/download/) and download the **.run** file the follow the instruction
 
 3. Clone the repo
 Using git the clone the repo
