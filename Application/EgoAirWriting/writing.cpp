@@ -23,6 +23,18 @@ int Writing::getPointCount(){
   return points_.size();
 }
 void Writing::clearPoints(){
+//    QString path = "record.txt";
+//    QFile file(path);
+//    if (!file.open(QIODevice::Append|QIODevice::Text)) {
+//        qDebug("Error writing record");
+//    }
+//    QTextStream out(&file);
+//    for(int i=0;i<points_.size();i++){
+//        out<<QString("%1").arg(points_[i].x)<<" "<<QString("%1").arg(points_[i].y)<<" ";
+//    }
+//    out<<endl;
+//    out.flush();
+//    file.close();
   points_.erase(points_.begin(), points_.end());
 }
 
@@ -73,6 +85,6 @@ string Writing::recognizeCharacter(){
       string str(utf8,3);
       cdd+=str;
     }
-
+  std::cout<<cdd<<std::endl;
   return cdd;
 }

@@ -72,7 +72,6 @@ void ImageProcessor::render(Writing& writing, GesStatus& status)
       case STATUS_CLOSE:
         showPointsOnMat(writing);break;
       case STATUS_OPEN:
-        writing.clearPoints();
         showPointsOnMat(writing);break;
       case STATUS_LSHAPE:
         showPointsOnMat(writing);break;

@@ -152,6 +152,16 @@ void MainWindow::updateView()
         updateGestureLabel(controll.status);
 
     int waitCount = 30;
+
+    // temp: Write data to txt to record the tragetory
+    QString path = "record.txt";
+    QFile file(path);
+    if (!file.open(QIODevice::Append|QIODevice::Text)) {
+        qDebug("Error writing record");
+    }
+    QTextStream out(&file);
+
+
     // show text on GUI
     if(controll.isRecognizing && controll.judgeOpen() && processor.recognizedCdd.size()>=30)
     {
@@ -170,6 +180,19 @@ void MainWindow::updateView()
 
         updateTextLabel(processor.recognized);
         updateCandidateLabel(processor.recognizedCdd);
+
+
+        // temp: write to file candidate
+        QString qstr0 = QString::fromStdString(cdd[0]);QString qstr1 = QString::fromStdString(cdd[1]);
+        QString qstr2 = QString::fromStdString(cdd[2]);QString qstr3 = QString::fromStdString(cdd[3]);
+        QString qstr4 = QString::fromStdString(cdd[4]);
+        out<<qstr0<<" "<<qstr1<<" "<<qstr2<<" "<<qstr3<<" "<<qstr4<<" ";
+        for(int i=0;i<writing.getPoints().size();i++){
+            out<<writing.getPoints()[i].x<<" "<<writing.getPoints()[i].y<<" ";
+        }
+        out<<endl;
+        out.flush();
+        file.close();
     }
 
     // show all candidates of Characters on GUI
@@ -182,6 +205,10 @@ void MainWindow::updateView()
 
         int pos = (std::max(0,controll.recognizingCounter)%(waitCount*5))/waitCount;
         updateCandidateLabelColor(pos);
+    }
+
+    if(controll.judgeOpen()){
+        writing.clearPoints();
     }
 
     // for deleting character
